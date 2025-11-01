@@ -113,6 +113,80 @@
 .about-img:hover {
   transform: scale(1.03);
 }
+/* ✅ Services Section */
+.services-section {
+  text-align: left;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.service-item {
+  font-size: 42px;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.arrow-circle {
+  font-size: 28px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #444;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.service-item:hover {
+  color: #a1ff23;
+}
+
+.service-item:hover .arrow-circle {
+  border-color: #a1ff23;
+  color: #a1ff23;
+  transform: translateX(8px);
+}
+
+/* Each service item styling */
+.service-item {
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 300;
+  color: #fff;
+  padding: 18px 0;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: 0.4s ease;
+  position: relative;
+}
+
+.service-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #A5FF0D;
+  transition: width 0.4s ease-out;
+}
+
+.service-item:hover::before {
+  width: 100%;
+}
 
 /* Animation */
 @keyframes fadeUp {

@@ -54,6 +54,41 @@ export default function Home() {
     </div>
   </div>
 </div>
+{/* ✅ Services Section */}
+<div className="section services-section container">
+  <div className="row">
+    <div className="col-12">
+      <h6 className="section-label">Our Services</h6>
+      <h2 className="section-title">Make your brand exceptional</h2>
+    </div>
+
+    <div className="col-12">
+     <ul className="services-list">
+  <li className="service-item">
+    Full Stack Web Development
+    <span class="arrow-circle">↗</span>
+  </li>
+  <li className="service-item">
+    Mobile App Development
+    <span class="arrow-circle">↗</span>
+  </li>
+  <li className="service-item">
+    UI / UX Design
+    <span class="arrow-circle">↗</span>
+  </li>
+  <li className="service-item">
+    AI Integration & Automation
+    <span class="arrow-circle">↗</span>
+  </li>
+  <li className="service-item">
+    Custom AI Bots
+    <span class="arrow-circle">↗</span>
+  </li>
+</ul>
+
+    </div>
+  </div>
+</div>
 
     </>
   );
