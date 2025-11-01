@@ -1,0 +1,46 @@
+.hero-section {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 📌 Full-Width Responsive Heading */
+.custom-heading {
+  font-size: clamp(56px, 8vw, 145px);
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  width: 100%;
+  max-width: 1200px; /* Wider than before */
+  margin: 0 auto 20px;
+  opacity: 0;
+  animation: fadeUp 1.3s ease forwards;
+}
+
+/* Highlight text styling */
+.custom-heading span {
+  background: linear-gradient(90deg, #d7ff75, #9fff00);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 14px rgba(159, 255, 0, 0.6);
+}
+
+/* Supporting text */
+.hero-text {
+  font-size: clamp(16px, 1.7vw, 24px);
+  font-weight: 300;
+  color: #d9d9d9;
+  max-width: 800px; /* Wider */
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeUp 1.8s ease forwards;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}

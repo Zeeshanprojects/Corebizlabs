@@ -1,12 +1,12 @@
 /* Main Navbar */
 .main-navbar {
   background-color: black;
-  padding: 18px 40px;
+  padding: 10px 40px;
 }
 
 /* Logo */
 .navbar-logo {
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
