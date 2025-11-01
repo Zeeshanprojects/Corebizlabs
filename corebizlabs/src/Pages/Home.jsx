@@ -24,30 +24,37 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="container">
-        <div className="row">
-            <div className="col-10">
-                <h6 className="custom-color">Why Choose Us</h6>
-                <h1 className="text-white">Connecting businesses with their audiences and individuals with their dreams. Our path forward is one of continuous growth</h1>
-             <button className="quote-btn">Get a Quote ↗</button>
-            </div>
-        </div>
-      </div>
-
-    <div className="container">
-        <div className="row">
-            <div className="col-12 col-sm-12 col-md-6">
-                  <h6 className="custom-color">About US</h6>
-                  <h1>Your Partner in Innovation</h1>
-                  <p>We are a full-service digital agency based in Laguna Beach, crafting bespoke tech solutions that drive growth. From sleek web designs to complex AI integrations, our team is dedicated to turning your vision into reality.</p>
-           <button className="quote-btn">Get a Quote ↗</button>
-            </div>
-            <div className="col-12 col-sm-12 col-md-6">
-                <img src={Images.image1} alt="image1" />
-            </div>
-        </div>
+<div className="section why-section container">
+  <div className="row">
+    <div className="col-12 col-lg-10">
+      <h6 className="section-label">Why Choose Us</h6>
+      <h2 className="section-title">
+        Connecting businesses with their audiences and individuals with their
+        dreams. Our path forward is one of continuous growth
+      </h2>
+      <button className="quote-btn">Get a Quote ↗</button>
     </div>
+  </div>
+</div>
+
+<div className="section about-section container">
+  <div className="row align-items-center">
+    <div className="col-12 col-md-6">
+      <h6 className="section-label">About Us</h6>
+      <h2 className="section-title">Your Partner in Innovation</h2>
+      <p className="section-text">
+        We are a full-service digital agency crafting bespoke tech solutions
+        that drive growth. From sleek web designs to complex AI integrations,
+        our team is dedicated to turning your vision into reality.
+      </p>
+      <button className="quote-btn">Get a Quote ↗</button>
+    </div>
+    <div className="col-12 col-md-6 text-end">
+      <img src={Images.image1} alt="image1" className="about-img" />
+    </div>
+  </div>
+</div>
+
     </>
   );
 }
