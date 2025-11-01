@@ -26,7 +26,7 @@ export default function Home() {
       </div>
 <div className="section why-section container">
   <div className="row">
-    <div className="col-12 col-lg-10">
+    <div className="col-12 col-lg-12">
       <h6 className="section-label">Why Choose Us</h6>
       <h2 className="section-title">
         Connecting businesses with their audiences and individuals with their
