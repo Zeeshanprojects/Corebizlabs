@@ -6,29 +6,12 @@ export default function Home() {
 useEffect(() => {
   document.title = "Home | Corebizlabs";
 
-  const sections = document.querySelectorAll(".fade-on-scroll");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    },
-    {
-      threshold: 0.3,
-    }
-  );
-
-  sections.forEach((sec) => observer.observe(sec));
-
-  return () => observer.disconnect();
+  
 }, []);
 
   return (
     <>
-      <div className="hero-section container fade-on-scroll">
+      <div className="hero-section container ">
         <div className="row">
           <div className="col-12">
             <h1 className="custom-heading">
@@ -45,7 +28,7 @@ useEffect(() => {
         </div>
       </div>
 
-    <div className="section work-process-section fade-on-scroll container py-5">
+    <div className="section work-process-section  container py-5">
   <div className="row  mb-4">
     <div className="col-12">
       <h6 className="section-label">Our Work Process</h6>
@@ -102,7 +85,7 @@ useEffect(() => {
   </div>
 </div>
 
-      <div className="section why-section container fade-on-scroll">
+      <div className="section why-section container ">
         <div className="row">
           <div className="col-12 col-lg-12">
             <h6 className="section-label">Why Choose Us</h6>
@@ -115,7 +98,7 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className="section about-section container fade-on-scroll">
+      <div className="section about-section container ">
        <div className="row align-items-center mb-5">
     <div className="col-12 col-md-6">
       <h6 className="section-label">Who We Are</h6>
@@ -135,7 +118,48 @@ useEffect(() => {
   </div>
 
 
-        <div className="tech-marquee fade-on-scroll">
+       
+      </div>
+
+      {/* ✅ Services Section */}
+      <div className="section services-section container ">
+        <div className="row">
+          <div className="col-12">
+            <h6 className="section-label">Our Services</h6>
+            <h2 className="section-title">Make your brand exceptional</h2>
+          </div>
+
+          <div className="col-12">
+            <ul className="services-list">
+              <li className="service-item">
+            
+                Full Stack Web Development
+                <span class="arrow-circle">↗</span>
+              </li>
+              <li className="service-item">
+                 
+                Mobile App Development
+                <span class="arrow-circle">↗</span>
+              </li>
+              <li className="service-item">
+               
+                UI / UX Design
+                <span class="arrow-circle">↗</span>
+              </li>
+              <li className="service-item">
+              
+                AI Integration & Automation
+                <span class="arrow-circle">↗</span>
+              </li>
+              <li className="service-item">
+             
+                Custom AI Bots
+                <span class="arrow-circle">↗</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+           <div className="tech-marquee container">
           <div className="marquee-track">
             <div className="tech-item">
               <i className="devicon-html5-plain"></i>
@@ -213,49 +237,10 @@ useEffect(() => {
             </div>
           </div>
         </div>
+
       </div>
-
-      {/* ✅ Services Section */}
-      <div className="section services-section container fade-on-scroll">
-        <div className="row">
-          <div className="col-12">
-            <h6 className="section-label">Our Services</h6>
-            <h2 className="section-title">Make your brand exceptional</h2>
-          </div>
-
-          <div className="col-12">
-            <ul className="services-list">
-              <li className="service-item">
-                <h3>01</h3>
-                Full Stack Web Development
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                 <h3>02</h3>
-                Mobile App Development
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                 <h3>03</h3>
-                UI / UX Design
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                 <h3>04</h3>
-                AI Integration & Automation
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                 <h3>05</h3>
-                Custom AI Bots
-                <span class="arrow-circle">↗</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-    <div className="section stats-section container fade-on-scroll">
+    
+    <div className="section stats-section container ">
   <div className="row">
     <div className="col-12">
       <h6 className="section-label">Our Achievements</h6>
@@ -283,6 +268,30 @@ useEffect(() => {
     </div>
   </div>
 </div>
+<div className="section container about-accordion-section">
+  <div className="row align-items-center">
+
+    {/* Left Side – Text + Image */}
+    <div className="col-12 col-md-6 content-wrapper">
+      <h6 className="section-label">How We Work</h6>
+      <h2 className="section-title">
+        Transforming Vision <br /> Into Reality
+      </h2>
+      <p className="section-text">
+        From concept to execution, we help businesses break barriers,
+        accelerate growth, and compete with confidence in the digital world.
+      </p>
+    
+    </div>
+<div className="col-12 col-sm-12 col-lg-6">
+    <img src={Images.image2} alt="image2" className="accordion-img" />
+</div>
+    {/* Right Side – Accordion */}
+    
+
+  </div>
+</div>
+
     </>
   );
 }

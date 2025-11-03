@@ -7,8 +7,8 @@
 
 
 .custom-heading {
-  font-size: clamp(56px, 8vw, 145px);
-  font-weight: 900;
+  font-size: clamp(10px, 7.5vw, 145px);
+  font-weight: 100;
   color: #fff;
   line-height: 1.05;
   letter-spacing: -1px;
@@ -30,7 +30,7 @@
 /* Supporting text */
 .hero-text {
   font-size: clamp(16px, 1.7vw, 24px);
-  font-weight: 300;
+
   color: #d9d9d9;
   max-width: 800px; /* Wider */
   margin: 0 auto;
@@ -70,7 +70,7 @@ border: 1px solid gray !important;
   text-transform: uppercase;
   color: #a5ff0d;
   letter-spacing: 2px;
-  font-weight: 600;
+ 
   margin-bottom: 8px;
   display: inline-block;
   position: relative;
@@ -88,7 +88,7 @@ border: 1px solid gray !important;
 /* Big Titles */
 .section-title {
   font-size: clamp(32px, 4vw, 58px);
-  font-weight: 800;
+  font-weight: 20;
   color: #ffffff;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -138,7 +138,7 @@ border: 1px solid gray !important;
   overflow: hidden;
   white-space: nowrap;
   padding: 28px 0;
-  margin-top: 45px;
+ 
   border-top: 2px solid #2a2a2a;
   border-bottom: 2px solid #2a2a2a;
 }
@@ -210,7 +210,7 @@ border: 1px solid gray !important;
 }
 
 .service-item {
-  font-size: 60px !important;
+  font-size: 35px !important;
   color: white !important;
   display: flex;
   justify-content: space-between;
@@ -276,20 +276,21 @@ border: 1px solid gray !important;
   padding: 30px 10px;
   transition: 0.3s ease-in-out;
   border-radius: 14px;
+ 
 }
 
 .stat-number {
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #96e70e !important;
-  color: #ffffff;
+
 }
 
 .stat-title {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #cfcfcf;
+  color: white;
 }
 
 .stat-box:hover {
@@ -323,31 +324,4 @@ border: 1px solid gray !important;
   }
 }
 
-/* Default state = gray + hidden */
-.fade-on-scroll {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-  color: #7b7b7b !important; /* Default GRAY text */
-}
 
-/* When in viewport = visible + White text */
-.fade-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
-  color: #ffffff !important;
-}
-
-.fade-on-scroll.visible .section-title,
-.fade-on-scroll.visible .section-text,
-.fade-on-scroll.visible h2,
-.fade-on-scroll.visible h3,
-.fade-on-scroll.visible h5,
-.fade-on-scroll.visible p {
-  color: #ffffff !important;
-}
-
-/* Section label color also becomes bright */
-.fade-on-scroll.visible .section-label {
-  color: #a5ff0d !important;
-}

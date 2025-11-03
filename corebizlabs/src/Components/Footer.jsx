@@ -4,7 +4,7 @@ import "./Footer.css"
 export default function Footer() {
   return (
     <>
-      <>
+      <hr className="underline"/>
         <div className="container-fluid p-0">
           {/* Footer */}
           <footer
@@ -21,7 +21,7 @@ export default function Footer() {
                   {/* Grid column */}
                   <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     {/* Content */}
-                    <h6 className="text-uppercase fw-bold">Company name</h6>
+                    <h6 className="text-uppercase fw-bold">CorebizLabs</h6>
                     <hr
                       className="mb-4 mt-0 d-inline-block mx-auto"
                       style={{
@@ -152,6 +152,5 @@ export default function Footer() {
         </div>
         {/* End of .container */}
       </>
-    </>
   );
 }
