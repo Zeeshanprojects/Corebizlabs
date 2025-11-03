@@ -1,28 +1,43 @@
 import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "./Home.css";
 
+import "./Home.css"
 export default function Home() {
+const testimonials = [
+  {
+    name: "Ahsan Ali",
+    role: "Business Owner",
+    review:
+      "CoreBiz Labs delivered exactly what we needed — top-quality design and flawless functionality.",
+  },
+  {
+    name: "Sameera Khan",
+    role: "Project Manager",
+    review:
+      "Brilliant teamwork and timely delivery! We are seeing great user response and conversions.",
+  },
+  {
+    name: "Zubair Mir",
+    role: "Startup Founder",
+    review:
+      "Their innovative solutions helped us scale faster. Highly recommended!",
+  },
+  {
+    name: "Hamza Ahmed",
+    role: "Entrepreneur",
+    review: "Professional, creative, and technically strong team!",
+  },
+];
   useEffect(() => {
     document.title = "Home | Corebizlabs";
   });
 
-  const sliderImages = [
-    Images.sliderimage1,
-    Images.sliderimage2,
-    Images.sliderimage3,
-    Images.sliderimage4,
-    Images.sliderimage5,
-    Images.sliderimage6,
-    Images.sliderimage7,
-    Images.sliderimage8,
-    Images.sliderimage9,
-  ];
+
   return (
     <>
       <div className="hero-section container">
@@ -42,34 +57,63 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="projects-slider-section">
-        {/* Explore More Button */}
-        <div className="explore-btn">
-          <span>Explore More</span>
-        </div>
+    <div className="section work-process-section container py-5">
+  <div className="row  mb-4">
+    <div className="col-12">
+      <h6 className="section-label">Our Work Process</h6>
+      <h2 className="section-title">
+        We Follow a Strategic & Outcome-Driven Approach
+      </h2>
+    </div>
+  </div>
 
-        {/* Wrapper ensures explore button doesn't overlap interactive area */}
-        <div className="swiper-wrapper-inner">
-          <Swiper
-            modules={[Navigation, Pagination, A11y]}
-            slidesPerView={2.2}
-            spaceBetween={30}
-            loop={true}
-            pagination={{ clickable: true }}
-            navigation={true} // enable prev/next arrows
-            observer={true} // respond to DOM changes
-            observeParents={true}
-            className="project-swiper"
-            a11y={{ enabled: true }}
-          >
-            {sliderImages.map((img, index) => (
-              <SwiperSlide key={index} className="project-slide">
-                <img src={img} alt={`Slide ${index}`} className="slider-img" />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+  <div className="row text-center g-4">
+    <div className="col-sm-12 col-md-3">
+      <div className="process-card ">
+        <div className="process-step">01</div>
+        <h2>Research & Analysis</h2>
+        <p>
+          We deeply analyze business requirements to discover opportunities
+          and define the right strategy.
+        </p>
       </div>
+    </div>
+
+    <div className="col-sm-12 col-md-3">
+      <div className="process-card">
+        <div className="process-step">02</div>
+        <h2>Planning & Strategy</h2>
+        <p>
+          Clear project roadmap with smart planning to ensure seamless
+          execution and timely delivery.
+        </p>
+      </div>
+    </div>
+
+    <div className="col-sm-12 col-md-3">
+      <div className="process-card ">
+        <div className="process-step">03</div>
+        <h2>Design & Development</h2>
+        <p>
+          We craft responsive, scalable & high-performance solutions with
+          cutting-edge technology.
+        </p>
+      </div>
+    </div>
+
+    <div className="col-sm-12 col-md-3">
+      <div className="process-card">
+        <div className="process-step">04</div>
+        <h2>Launch & Support</h2>
+        <p>
+          We deploy the product with ongoing support to ensure
+          long-term success and improvements.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
       <div className="section why-section container">
         <div className="row">
           <div className="col-12 col-lg-12">
@@ -84,22 +128,25 @@ export default function Home() {
       </div>
 
       <div className="section about-section container">
-        <div className="row align-items-center">
-          <div className="col-12 col-md-6">
-            <h6 className="section-label">About Us</h6>
-            <h2 className="section-title">Your Partner in Innovation</h2>
-            <p className="section-text">
-              We are a full-service digital agency crafting bespoke tech
-              solutions that drive growth. From sleek web designs to complex AI
-              integrations, our team is dedicated to turning your vision into
-              reality.
-            </p>
-            <button className="quote-btn">Get a Quote ↗</button>
-          </div>
-          <div className="col-12 col-md-6 text-end">
-            <img src={Images.image1} alt="image1" className="about-img" />
-          </div>
-        </div>
+       <div className="row align-items-center mb-5">
+    <div className="col-12 col-md-6">
+      <h6 className="section-label">Who We Are</h6>
+      <h2 className="section-title">Your Partner in Digital Transformation</h2>
+      <p className="section-text">
+        We are a forward-thinking digital agency delivering modern tech
+        solutions that elevate brands. From visually stunning websites to
+        scalable enterprise systems—our mission is to turn bold ideas into
+        powerful digital realities.
+      </p>
+      <button className="quote-btn">Get a Quote ↗</button>
+    </div>
+
+    <div className="col-12 col-md-6 text-end">
+      <img src={Images.image1} alt="about CoreBiz Labs" className="about-img" />
+    </div>
+  </div>
+
+
         <div className="tech-marquee">
           <div className="marquee-track">
             <div className="tech-item">
@@ -191,22 +238,27 @@ export default function Home() {
           <div className="col-12">
             <ul className="services-list">
               <li className="service-item">
+                <h3>01</h3>
                 Full Stack Web Development
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
+                 <h3>02</h3>
                 Mobile App Development
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
+                 <h3>03</h3>
                 UI / UX Design
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
+                 <h3>04</h3>
                 AI Integration & Automation
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
+                 <h3>05</h3>
                 Custom AI Bots
                 <span class="arrow-circle">↗</span>
               </li>
@@ -243,7 +295,30 @@ export default function Home() {
     </div>
   </div>
 </div>
+ 
+ <div className="section  container">
+      <h6 className="section-label">Testimonials</h6>
+      <h2 className="section-title">What Our Clients Say</h2>
 
+      <Swiper
+        modules={[Navigation, Pagination]}
+        slidesPerView={3}
+        spaceBetween={30}
+        centeredSlides={true}
+        loop={true}
+        navigation={true}
+        pagination={{ clickable: true }}
+        className="testimonials-swiper"
+      >
+        {testimonials.map((item, i) => (
+          <SwiperSlide key={i} className="testimonial-card">
+            <p className="review">“{item.review}”</p>
+            <h5 className="name">{item.name}</h5>
+            <span className="role">{item.role}</span>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
     </>
   );
 }

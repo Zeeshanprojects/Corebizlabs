@@ -5,7 +5,6 @@
   text-align: center;
 }
 
-/* 📌 Full-Width Responsive Heading */
 .custom-heading {
   font-size: clamp(56px, 8vw, 145px);
   font-weight: 900;
@@ -37,6 +36,26 @@
   line-height: 1.6;
   opacity: 0;
   animation: fadeUp 1.8s ease forwards;
+}
+.work-process-section{
+margin-top: 100px ;
+}
+.work-process-section .process-card {
+  height: 100%;
+color: white;
+text-align: start !important;
+border: 1px solid gray !important;
+  padding: 25px;
+  border-radius: 16px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.process-step {
+  font-size: 50px;
+  font-weight: 700;
+  color: #A8FF15;
+  margin-bottom: 12px;
 }
 
 /* Universal section spacing */
@@ -115,7 +134,6 @@
 }
 .tech-marquee {
   width: 100%;
-  
   overflow: hidden;
   white-space: nowrap;
   padding: 28px 0;
@@ -125,7 +143,6 @@
 }
 
 .marquee-track {
-
   display: inline-flex;
   gap: 70px;
   animation: marquee 22s linear infinite;
@@ -150,86 +167,6 @@
   text-shadow: 0px 0px 15px rgba(161, 255, 35, 0.7);
   transform: translateY(-4px);
 }
-/* container */
-.projects-slider-section {
-  width: 100%;
-  background: #0f0f0f;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 80px 0;
-  position: relative;
-}
-
-/* make sure the explore button is outside the swiper and doesn't block it */
-.explore-btn {
-  width: 180px;
-  height: 180px;
-  border: 2px solid white;
-  border-radius: 50%;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 180px;
-  margin-left: 24px;
-  z-index: 20;
-  background: transparent;
-  transition: transform .28s ease, background .28s ease, color .28s ease;
-}
-
-/* hover */
-.explore-btn:hover {
-  background: #fff;
-  color: #000;
-  transform: scale(1.03);
-}
-
-/* this wrapper holds the swiper so the explore button doesn't sit on top of it */
-.swiper-wrapper-inner {
-  width: calc(100% - 260px); /* leave space on left for circle */
-  padding-right: 24px;
-}
-
-/* Swiper container */
-.project-swiper {
-  width: 100%;
-}
-
-/* Slide styling */
-.project-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider-img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
-  transition: transform .4s ease;
-}
-
-.slider-img:hover {
-  transform: scale(1.03);
-}
-
-/* Make prev/next arrows more visible and above slides */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #fff;
-  z-index: 30;
-}
-
-/* Pagination bullets style */
-.swiper-pagination-bullet {
-  background: rgba(255,255,255,0.25) !important;
-}
-.swiper-pagination-bullet-active {
-  background: #fff !important;
-}
 
 /* MOBILE: stack vertically */
 @media (max-width: 1024px) {
@@ -249,7 +186,6 @@
     height: 260px;
   }
 }
-
 
 @keyframes marquee {
   from {
@@ -273,8 +209,8 @@
 }
 
 .service-item {
-  font-size: 42px;
-  color: #888;
+  font-size: 60px !important;
+  color: white !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -287,8 +223,8 @@
 
 .arrow-circle {
   font-size: 28px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height:70px;
   border: 2px solid #444;
   border-radius: 50%;
   display: flex;
@@ -334,7 +270,6 @@
 .service-item:hover::before {
   width: 100%;
 }
-
 
 .stats-row .stat-box {
   padding: 30px 10px;
@@ -385,4 +320,126 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.testimonial-card {
+  height: 300px;
+  width: 450px;
+  color: white !important;
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 30px;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  opacity: 0.5;
+  transform: scale(0.85);
+  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* Text inside */
+.testimonial-card p {
+  color: white;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.testimonial-card h5 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.testimonial-card span {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Circle Navigation Buttons */
+.control-btn {
+  width: 48px;
+  height: 48px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.control-btn:hover {
+  background: #e91e63;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e91e63;
+}
+.testimonials-section {
+  background: #000;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.testimonials-swiper {
+  padding-top: 40px;
+}
+
+.testimonial-card {
+  background: transparent;
+  border: 2px solid #ffffff20;
+  border-radius: 16px;
+  padding: 30px;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  opacity: 0.5;
+}
+
+.swiper-slide-active {
+  transform: scale(1.12);
+  border-color: #e91e63;
+  opacity: 1;
+  box-shadow: 0px 10px 30px rgba(233, 30, 99, 0.3);
+}
+
+.review {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.role {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 45px;
+  height: 45px;
+  background: #111;
+  border: 2px solid #e91e63;
+  border-radius: 50%;
+  color: #e91e63;
+  transition: 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #e91e63;
+  color: #000;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+  background: #ffffff30;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e91e63;
 }
