@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css"
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           {/* Footer */}
           <footer
             className="text-center text-lg-start text-white"
-            style={{ backgroundColor: "#1c2331" }}
+            style={{ backgroundColor: "#0E0F11" }}
           >
             {/* Section: Social media */}
             <section className="d-flex justify-content-between p-2"></section>

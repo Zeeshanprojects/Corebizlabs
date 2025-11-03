@@ -1,11 +1,30 @@
 import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import "./Home.css";
 
 export default function Home() {
   useEffect(() => {
     document.title = "Home | Corebizlabs";
   });
+
+const sliderImages = [
+  Images.sliderimage1,
+  Images.sliderimage2,
+  Images.sliderimage3,
+  Images.sliderimage4,
+  Images.sliderimage5,
+  Images.sliderimage6,
+  Images.sliderimage7,
+  Images.sliderimage8,
+  Images.sliderimage9,
+];
   return (
     <>
       <div className="hero-section container">
@@ -24,6 +43,35 @@ export default function Home() {
           </div>
         </div>
       </div>
+     <div className="projects-slider-section">
+
+      {/* Explore More Button */}
+      <div className="explore-btn">
+        <span>Explore More</span>
+      </div>
+
+      {/* Wrapper ensures explore button doesn't overlap interactive area */}
+      <div className="swiper-wrapper-inner">
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          slidesPerView={2.2}
+          spaceBetween={30}
+          loop={true}
+          pagination={{ clickable: true }}
+          navigation={true}               // enable prev/next arrows
+          observer={true}                 // respond to DOM changes
+          observeParents={true}
+          className="project-swiper"
+          a11y={{ enabled: true }}
+        >
+          {sliderImages.map((img, index) => (
+            <SwiperSlide key={index} className="project-slide">
+              <img src={img} alt={`Slide ${index}`} className="slider-img" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
 <div className="section why-section container">
   <div className="row">
     <div className="col-12 col-lg-12">

@@ -48,7 +48,7 @@
 .section-label {
   font-size: 1rem;
   text-transform: uppercase;
-  color: #A5FF0D;
+  color: #a5ff0d;
   letter-spacing: 2px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -60,7 +60,7 @@
   content: "";
   width: 45px;
   height: 2px;
-  background: #A5FF0D;
+  background: #a5ff0d;
   display: block;
   margin-top: 6px;
 }
@@ -87,8 +87,8 @@
 .quote-btn {
   padding: 12px 28px;
   background: transparent;
-  border: 2px solid #A5FF0D;
-  color: #A5FF0D;
+  border: 2px solid #a5ff0d;
+  color: #a5ff0d;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -98,7 +98,7 @@
 }
 
 .quote-btn:hover {
-  background: #A5FF0D;
+  background: #a5ff0d;
   color: #000;
 }
 
@@ -148,6 +148,106 @@
   text-shadow: 0px 0px 15px rgba(161, 255, 35, 0.7);
   transform: translateY(-4px);
 }
+/* container */
+.projects-slider-section {
+  width: 100%;
+  background: #0f0f0f;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 0;
+  position: relative;
+}
+
+/* make sure the explore button is outside the swiper and doesn't block it */
+.explore-btn {
+  width: 180px;
+  height: 180px;
+  border: 2px solid rgba(255,255,255,0.12);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 180px;
+  margin-left: 24px;
+  z-index: 20;
+  background: transparent;
+  transition: transform .28s ease, background .28s ease, color .28s ease;
+}
+
+/* hover */
+.explore-btn:hover {
+  background: #fff;
+  color: #000;
+  transform: scale(1.03);
+}
+
+/* this wrapper holds the swiper so the explore button doesn't sit on top of it */
+.swiper-wrapper-inner {
+  width: calc(100% - 260px); /* leave space on left for circle */
+  padding-right: 24px;
+}
+
+/* Swiper container */
+.project-swiper {
+  width: 100%;
+}
+
+/* Slide styling */
+.project-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  transition: transform .4s ease;
+}
+
+.slider-img:hover {
+  transform: scale(1.03);
+}
+
+/* Make prev/next arrows more visible and above slides */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  z-index: 30;
+}
+
+/* Pagination bullets style */
+.swiper-pagination-bullet {
+  background: rgba(255,255,255,0.25) !important;
+}
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+/* MOBILE: stack vertically */
+@media (max-width: 1024px) {
+  .projects-slider-section {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  .explore-btn {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .swiper-wrapper-inner {
+    width: 100%;
+    padding: 0 24px;
+  }
+  .slider-img {
+    height: 260px;
+  }
+}
+
 
 @keyframes marquee {
   from {
@@ -212,7 +312,7 @@
   font-weight: 300;
   color: #fff;
   padding: 18px 0;
-    border-bottom: 2px solid rgba(255,255,255,0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
   transition: 0.4s ease;
   position: relative;
@@ -225,7 +325,7 @@
   bottom: 0;
   width: 0%;
   height: 2px;
-  background: #A5FF0D;
+  background: #a5ff0d;
   transition: width 0.4s ease-out;
 }
 
@@ -235,6 +335,12 @@
 
 /* Animation */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(25px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
