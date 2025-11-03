@@ -53,7 +53,33 @@ export default function Home() {
       <img src={Images.image1} alt="image1" className="about-img" />
     </div>
   </div>
+  <div className="tech-marquee">
+  <div className="marquee-track">
+    <div className="tech-item"><i className="devicon-html5-plain"></i><span>HTML</span></div>
+    <div className="tech-item"><i className="devicon-css3-plain"></i><span>CSS</span></div>
+    <div className="tech-item"><i className="devicon-javascript-plain"></i><span>JavaScript</span></div>
+    <div className="tech-item"><i className="devicon-react-original"></i><span>React</span></div>
+    <div className="tech-item"><i className="devicon-nodejs-plain"></i><span>Node.js</span></div>
+    <div className="tech-item"><i className="devicon-laravel-plain"></i><span>Laravel</span></div>
+    <div className="tech-item"><i className="devicon-mysql-plain"></i><span>MySQL</span></div>
+    <div className="tech-item"><i className="devicon-php-plain"></i><span>PHP</span></div>
+    <div className="tech-item"><i className="devicon-flutter-plain"></i><span>Flutter</span></div>
+{/* 
+    <!-- Duplicate for smooth infinite scroll --> */}
+    <div className="tech-item"><i className="devicon-html5-plain"></i><span>HTML</span></div>
+    <div className="tech-item"><i className="devicon-css3-plain"></i><span>CSS</span></div>
+    <div className="tech-item"><i className="devicon-javascript-plain"></i><span>JavaScript</span></div>
+    <div className="tech-item"><i className="devicon-react-original"></i><span>React</span></div>
+    <div className="tech-item"><i className="devicon-nodejs-plain"></i><span>Node.js</span></div>
+    <div className="tech-item"><i className="devicon-laravel-plain"></i><span>Laravel</span></div>
+    <div className="tech-item"><i className="devicon-mysql-plain"></i><span>MySQL</span></div>
+    <div className="tech-item"><i className="devicon-php-plain"></i><span>PHP</span></div>
+    <div className="tech-item"><i className="devicon-flutter-plain"></i><span>Flutter</span></div>
+  </div>
 </div>
+
+</div>
+
 {/* ✅ Services Section */}
 <div className="section services-section container">
   <div className="row">
