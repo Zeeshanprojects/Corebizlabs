@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+
 .custom-heading {
   font-size: clamp(56px, 8vw, 145px);
   font-weight: 900;
@@ -322,7 +323,7 @@ border: 1px solid gray !important;
   }
 }
 .testimonial-card {
-  height: 300px;
+  height: 500px;
   width: 450px;
   color: white !important;
   border-radius: 50px;
@@ -368,76 +369,6 @@ border: 1px solid gray !important;
 
 .control-btn:hover {
   background: #e91e63;
-}
-
-.swiper-pagination-bullet-active {
-  background: #e91e63;
-}
-.testimonials-section {
-  background: #000;
-  padding: 80px 0;
-  text-align: center;
-}
-
-.testimonials-swiper {
-  padding-top: 40px;
-}
-
-.testimonial-card {
-  background: transparent;
-  border: 2px solid #ffffff20;
-  border-radius: 16px;
-  padding: 30px;
-  color: #fff;
-  transition: 0.4s ease-in-out;
-  opacity: 0.5;
-}
-
-.swiper-slide-active {
-  transform: scale(1.12);
-  border-color: #e91e63;
-  opacity: 1;
-  box-shadow: 0px 10px 30px rgba(233, 30, 99, 0.3);
-}
-
-.review {
-  font-size: 16px;
-  font-style: italic;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.name {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.role {
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-/* Navigation Buttons */
-.swiper-button-prev,
-.swiper-button-next {
-  width: 45px;
-  height: 45px;
-  background: #111;
-  border: 2px solid #e91e63;
-  border-radius: 50%;
-  color: #e91e63;
-  transition: 0.3s ease;
-}
-
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background: #e91e63;
-  color: #000;
-}
-
-/* Pagination Dots */
-.swiper-pagination-bullet {
-  background: #ffffff30;
 }
 
 .swiper-pagination-bullet-active {

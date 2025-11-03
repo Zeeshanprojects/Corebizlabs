@@ -8,31 +8,6 @@ import "swiper/css/navigation";
 
 import "./Home.css"
 export default function Home() {
-const testimonials = [
-  {
-    name: "Ahsan Ali",
-    role: "Business Owner",
-    review:
-      "CoreBiz Labs delivered exactly what we needed — top-quality design and flawless functionality.",
-  },
-  {
-    name: "Sameera Khan",
-    role: "Project Manager",
-    review:
-      "Brilliant teamwork and timely delivery! We are seeing great user response and conversions.",
-  },
-  {
-    name: "Zubair Mir",
-    role: "Startup Founder",
-    review:
-      "Their innovative solutions helped us scale faster. Highly recommended!",
-  },
-  {
-    name: "Hamza Ahmed",
-    role: "Entrepreneur",
-    review: "Professional, creative, and technically strong team!",
-  },
-];
   useEffect(() => {
     document.title = "Home | Corebizlabs";
   });
@@ -295,30 +270,6 @@ const testimonials = [
     </div>
   </div>
 </div>
- 
- <div className="section  container">
-      <h6 className="section-label">Testimonials</h6>
-      <h2 className="section-title">What Our Clients Say</h2>
-
-      <Swiper
-        modules={[Navigation, Pagination]}
-        slidesPerView={3}
-        spaceBetween={30}
-        centeredSlides={true}
-        loop={true}
-        navigation={true}
-        pagination={{ clickable: true }}
-        className="testimonials-swiper"
-      >
-        {testimonials.map((item, i) => (
-          <SwiperSlide key={i} className="testimonial-card">
-            <p className="review">“{item.review}”</p>
-            <h5 className="name">{item.name}</h5>
-            <span className="role">{item.role}</span>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
     </>
   );
 }
