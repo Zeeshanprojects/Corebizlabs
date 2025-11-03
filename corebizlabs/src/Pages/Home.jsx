@@ -2,10 +2,29 @@ import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
 import "./Home.css"
 export default function Home() {
-  useEffect(() => {
-    document.title = "Home | Corebizlabs";
-  });
 
+useEffect(() => {
+  document.title = "Home | Corebizlabs";
+
+  const sections = document.querySelectorAll(".fade-on-scroll");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    }
+  );
+
+  sections.forEach((sec) => observer.observe(sec));
+
+  return () => observer.disconnect();
+}, []);
 
   return (
     <>
@@ -26,7 +45,7 @@ export default function Home() {
         </div>
       </div>
 
-    <div className="section work-process-section container py-5">
+    <div className="section work-process-section fade-on-scroll container py-5">
   <div className="row  mb-4">
     <div className="col-12">
       <h6 className="section-label">Our Work Process</h6>
@@ -83,7 +102,7 @@ export default function Home() {
   </div>
 </div>
 
-      <div className="section why-section container">
+      <div className="section why-section container fade-on-scroll">
         <div className="row">
           <div className="col-12 col-lg-12">
             <h6 className="section-label">Why Choose Us</h6>
@@ -96,7 +115,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="section about-section container">
+      <div className="section about-section container fade-on-scroll">
        <div className="row align-items-center mb-5">
     <div className="col-12 col-md-6">
       <h6 className="section-label">Who We Are</h6>
@@ -116,7 +135,7 @@ export default function Home() {
   </div>
 
 
-        <div className="tech-marquee">
+        <div className="tech-marquee fade-on-scroll">
           <div className="marquee-track">
             <div className="tech-item">
               <i className="devicon-html5-plain"></i>
@@ -197,7 +216,7 @@ export default function Home() {
       </div>
 
       {/* ✅ Services Section */}
-      <div className="section services-section container">
+      <div className="section services-section container fade-on-scroll">
         <div className="row">
           <div className="col-12">
             <h6 className="section-label">Our Services</h6>
@@ -236,7 +255,7 @@ export default function Home() {
         </div>
       </div>
 
-    <div className="section stats-section container">
+    <div className="section stats-section container fade-on-scroll">
   <div className="row">
     <div className="col-12">
       <h6 className="section-label">Our Achievements</h6>

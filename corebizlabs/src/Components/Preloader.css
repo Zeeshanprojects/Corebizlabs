@@ -1,0 +1,8 @@
+.preloader{
+    background-color: black;
+}
+.preloader-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

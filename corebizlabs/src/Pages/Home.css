@@ -322,55 +322,32 @@ border: 1px solid gray !important;
     transform: translateY(0);
   }
 }
-.testimonial-card {
-  height: 500px;
-  width: 450px;
-  color: white !important;
-  border-radius: 50px;
-  border: 1px solid white;
-  padding: 30px;
-  text-align: center;
-  transition: 0.4s ease-in-out;
-  opacity: 0.5;
-  transform: scale(0.85);
-  box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.05);
+
+/* Default state = gray + hidden */
+.fade-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+  color: #7b7b7b !important; /* Default GRAY text */
 }
 
-/* Text inside */
-.testimonial-card p {
-  color: white;
-  font-style: italic;
-  margin-bottom: 12px;
+/* When in viewport = visible + White text */
+.fade-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  color: #ffffff !important;
 }
 
-.testimonial-card h5 {
-  font-weight: 700;
-  margin: 0;
+.fade-on-scroll.visible .section-title,
+.fade-on-scroll.visible .section-text,
+.fade-on-scroll.visible h2,
+.fade-on-scroll.visible h3,
+.fade-on-scroll.visible h5,
+.fade-on-scroll.visible p {
+  color: #ffffff !important;
 }
 
-.testimonial-card span {
-  color: #777;
-  font-size: 0.9rem;
-}
-
-/* Circle Navigation Buttons */
-.control-btn {
-  width: 48px;
-  height: 48px;
-  background: #000;
-  color: #fff;
-  border-radius: 50%;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-  margin: 0 10px;
-  transition: 0.3s;
-}
-
-.control-btn:hover {
-  background: #e91e63;
-}
-
-.swiper-pagination-bullet-active {
-  background: #e91e63;
+/* Section label color also becomes bright */
+.fade-on-scroll.visible .section-label {
+  color: #a5ff0d !important;
 }
