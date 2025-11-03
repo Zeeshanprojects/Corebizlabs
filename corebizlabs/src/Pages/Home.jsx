@@ -159,7 +159,39 @@ useEffect(() => {
             </ul>
           </div>
         </div>
-           <div className="tech-marquee container">
+         
+
+      </div>
+    
+    <div className="section stats-section container ">
+  <div className="row">
+    <div className="col-12">
+      <h6 className="section-label">Our Achievements</h6>
+      <h2 className="section-title">
+        Driving measurable success through innovation and customer trust
+      </h2>
+    </div>
+  </div>
+
+  {/* ✅ Stats Grid (not inside previous row) */}
+  <div className="row stats-row text-center mt-5">
+    <div className="col-sm-12 col-md-4 stat-box">
+      <h2 className="stat-number">100%</h2>
+      <h5 className="stat-title">Client Satisfaction</h5>
+    </div>
+
+    <div className="col-sm-12 col-md-4 stat-box">
+      <h2 className="stat-number">10+</h2>
+      <h5 className="stat-title">Years of Experience</h5>
+    </div>
+
+    <div className="col-sm-12 col-md-4 stat-box">
+      <h2 className="stat-number">50+</h2>
+      <h5 className="stat-title">Successful Projects</h5>
+    </div>
+  </div>
+</div>
+  <div className="tech-marquee container">
           <div className="marquee-track">
             <div className="tech-item">
               <i className="devicon-html5-plain"></i>
@@ -236,38 +268,7 @@ useEffect(() => {
               <span>Flutter</span>
             </div>
           </div>
-        </div>
-
-      </div>
-    
-    <div className="section stats-section container ">
-  <div className="row">
-    <div className="col-12">
-      <h6 className="section-label">Our Achievements</h6>
-      <h2 className="section-title">
-        Driving measurable success through innovation and customer trust
-      </h2>
-    </div>
-  </div>
-
-  {/* ✅ Stats Grid (not inside previous row) */}
-  <div className="row stats-row text-center mt-5">
-    <div className="col-sm-12 col-md-4 stat-box">
-      <h2 className="stat-number">100%</h2>
-      <h5 className="stat-title">Client Satisfaction</h5>
-    </div>
-
-    <div className="col-sm-12 col-md-4 stat-box">
-      <h2 className="stat-number">10+</h2>
-      <h5 className="stat-title">Years of Experience</h5>
-    </div>
-
-    <div className="col-sm-12 col-md-4 stat-box">
-      <h2 className="stat-number">50+</h2>
-      <h5 className="stat-title">Successful Projects</h5>
-    </div>
-  </div>
-</div>
+        </div>     
 <div className="section container about-accordion-section">
   <div className="row align-items-center">
 
