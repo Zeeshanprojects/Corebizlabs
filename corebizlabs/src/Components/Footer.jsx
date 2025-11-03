@@ -15,7 +15,7 @@ export default function Footer() {
             <section className="d-flex justify-content-between p-2"></section>
 
             <section className="">
-              <div className="container text-center text-md-start mt-5">
+              <div className="container-fluid text-center text-md-start mt-5">
                 {/* Grid row */}
                 <div className="row mt-3">
                   {/* Grid column */}
