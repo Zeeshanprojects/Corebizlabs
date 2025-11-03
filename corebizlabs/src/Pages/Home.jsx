@@ -173,23 +173,30 @@ useEffect(() => {
     </div>
   </div>
 
-  {/* ✅ Stats Grid (not inside previous row) */}
-  <div className="row stats-row text-center mt-5">
-    <div className="col-sm-12 col-md-4 stat-box">
-      <h2 className="stat-number">100%</h2>
-      <h5 className="stat-title">Client Satisfaction</h5>
-    </div>
-
-    <div className="col-sm-12 col-md-4 stat-box">
-      <h2 className="stat-number">10+</h2>
-      <h5 className="stat-title">Years of Experience</h5>
-    </div>
-
-    <div className="col-sm-12 col-md-4 stat-box">
-      <h2 className="stat-number">50+</h2>
-      <h5 className="stat-title">Successful Projects</h5>
-    </div>
+ {/* ✅ Stats Grid Updated to 4 Items */}
+<div className="row stats-row text-center mt-5">
+  <div className="col-sm-6 col-md-3 stat-box">
+    <h2 className="stat-number">100%</h2>
+    <h5 className="stat-title">Client Satisfaction</h5>
   </div>
+
+  <div className="col-sm-6 col-md-3 stat-box">
+    <h2 className="stat-number">10+</h2>
+    <h5 className="stat-title">Years of Experience</h5>
+  </div>
+
+  <div className="col-sm-6 col-md-3 stat-box">
+    <h2 className="stat-number">50+</h2>
+    <h5 className="stat-title">Successful Projects</h5>
+  </div>
+
+  {/* ✅ Newly added stat below */}
+  <div className="col-sm-6 col-md-3 stat-box">
+    <h2 className="stat-number">15+</h2>
+    <h5 className="stat-title">Industry Experts</h5>
+  </div>
+</div>
+
 </div>
   <div className="tech-marquee container">
           <div className="marquee-track">
