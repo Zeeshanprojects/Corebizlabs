@@ -335,6 +335,46 @@
   width: 100%;
 }
 
+
+.stats-row .stat-box {
+  padding: 30px 10px;
+  transition: 0.3s ease-in-out;
+  border-radius: 14px;
+}
+
+.stat-number {
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #96e70e !important;
+  color: #ffffff;
+}
+
+.stat-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #cfcfcf;
+}
+
+.stat-box:hover {
+  background: #1b1b1b;
+  transform: translateY(-6px);
+
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .stat-box:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (max-width: 767px) {
+  .stat-number {
+    font-size: 2.3rem;
+  }
+}
+
 /* Animation */
 @keyframes fadeUp {
   from {
