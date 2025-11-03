@@ -1,11 +1,5 @@
 import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/navigation";
-
 import "./Home.css"
 export default function Home() {
   useEffect(() => {
