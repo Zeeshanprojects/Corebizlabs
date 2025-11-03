@@ -28,7 +28,7 @@ useEffect(() => {
 
   return (
     <>
-      <div className="hero-section container">
+      <div className="hero-section container fade-on-scroll">
         <div className="row">
           <div className="col-12">
             <h1 className="custom-heading">
