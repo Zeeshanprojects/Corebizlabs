@@ -133,7 +133,7 @@ useEffect(() => {
             <ul className="services-list">
               <li className="service-item">
             
-                Full Stack Web Development
+              Full Stack Web Development
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
@@ -277,14 +277,17 @@ useEffect(() => {
       <h2 className="section-title">
         Transforming Vision <br /> Into Reality
       </h2>
-      <p className="section-text">
-        From concept to execution, we help businesses break barriers,
-        accelerate growth, and compete with confidence in the digital world.
-      </p>
-    
+    <p className="section-text">
+  At Corebiz Labs, we turn ideas into powerful digital experiences. From concept
+  to execution, our strategy-driven approach helps businesses accelerate growth,
+  improve efficiency, and stand out in the digital world.
+  <br />
+
+</p>
+      <button className="quote-btn">Get a Quote ↗</button>
     </div>
 <div className="col-12 col-sm-12 col-lg-6">
-    <img src={Images.image2} alt="image2" className="accordion-img" />
+    <img src={Images.image2} alt="image2" className="about-img"/>
 </div>
     {/* Right Side – Accordion */}
     
