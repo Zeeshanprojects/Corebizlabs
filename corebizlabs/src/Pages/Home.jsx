@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import Images from "../assets/Images/Image";
-import "./Home.css"
+import "./Home.css";
 export default function Home() {
-
-useEffect(() => {
-  document.title = "Home | Corebizlabs";
-
-  
-}, []);
+  useEffect(() => {
+    document.title = "Home | Corebizlabs";
+  }, []);
 
   return (
     <>
@@ -28,62 +25,62 @@ useEffect(() => {
         </div>
       </div>
 
-    <div className="section work-process-section  container py-5">
-  <div className="row  mb-4">
-    <div className="col-12">
-      <h6 className="section-label">Our Work Process</h6>
-      <h2 className="section-title">
-        We Follow a Strategic & Outcome-Driven Approach
-      </h2>
-    </div>
-  </div>
+      <div className="section work-process-section  container py-5">
+        <div className="row  mb-4">
+          <div className="col-12">
+            <h6 className="section-label">Our Work Process</h6>
+            <h2 className="section-title ">
+              We Follow a Strategic & Outcome-Driven Approach
+            </h2>
+          </div>
+        </div>
 
-  <div className="row text-center g-4">
-    <div className="col-sm-12 col-md-3">
-      <div className="process-card ">
-        <div className="process-step">01</div>
-        <h2>Research & Analysis</h2>
-        <p>
-          We deeply analyze business requirements to discover opportunities
-          and define the right strategy.
-        </p>
-      </div>
-    </div>
+        <div className="row text-center g-4">
+          <div className="col-sm-12 col-md-3">
+            <div className="process-card ">
+              <div className="process-step">01</div>
+              <h2>Research & Analysis</h2>
+              <p className="para">
+                We deeply analyze business requirements to discover
+                opportunities and define the right strategy.
+              </p>
+            </div>
+          </div>
 
-    <div className="col-sm-12 col-md-3">
-      <div className="process-card">
-        <div className="process-step">02</div>
-        <h2>Planning & Strategy</h2>
-        <p>
-          Clear project roadmap with smart planning to ensure seamless
-          execution and timely delivery.
-        </p>
-      </div>
-    </div>
+          <div className="col-sm-12 col-md-3">
+            <div className="process-card">
+              <div className="process-step">02</div>
+              <h2>Planning & Strategy</h2>
+              <p className="para">
+                Clear project roadmap with smart planning to ensure seamless
+                execution and timely delivery.
+              </p>
+            </div>
+          </div>
 
-    <div className="col-sm-12 col-md-3">
-      <div className="process-card ">
-        <div className="process-step">03</div>
-        <h2>Design & Development</h2>
-        <p>
-          We craft responsive, scalable & high-performance solutions with
-          cutting-edge technology.
-        </p>
-      </div>
-    </div>
+          <div className="col-sm-12 col-md-3">
+            <div className="process-card ">
+              <div className="process-step">03</div>
+              <h2>Design & Development</h2>
+              <p className="para">
+                We craft responsive, scalable & high-performance solutions with
+                cutting-edge technology.
+              </p>
+            </div>
+          </div>
 
-    <div className="col-sm-12 col-md-3">
-      <div className="process-card">
-        <div className="process-step">04</div>
-        <h2>Launch & Support</h2>
-        <p>
-          We deploy the product with ongoing support to ensure
-          long-term success and improvements.
-        </p>
+          <div className="col-sm-12 col-md-3">
+            <div className="process-card">
+              <div className="process-step">04</div>
+              <h2>Launch & Support</h2>
+              <p className="para">
+                We deploy the product with ongoing support to ensure long-term
+                success and improvements.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
       <div className="section why-section container ">
         <div className="row">
@@ -99,26 +96,29 @@ useEffect(() => {
       </div>
 
       <div className="section about-section container ">
-       <div className="row align-items-center mb-5">
-    <div className="col-12 col-md-6">
-      <h6 className="section-label">Who We Are</h6>
-      <h2 className="section-title">Your Partner in Digital Transformation</h2>
-      <p className="section-text">
-        We are a forward-thinking digital agency delivering modern tech
-        solutions that elevate brands. From visually stunning websites to
-        scalable enterprise systems—our mission is to turn bold ideas into
-        powerful digital realities.
-      </p>
-      <button className="quote-btn">Get a Quote ↗</button>
-    </div>
+        <div className="row align-items-center mb-5">
+          <div className="col-12 col-md-6">
+            <h6 className="section-label">Who We Are</h6>
+            <h2 className="section-title">
+              Your Partner in Digital Transformation
+            </h2>
+            <p className="section-text">
+              We are a forward-thinking digital agency delivering modern tech
+              solutions that elevate brands. From visually stunning websites to
+              scalable enterprise systems—our mission is to turn bold ideas into
+              powerful digital realities.
+            </p>
+            <button className="quote-btn">Get a Quote ↗</button>
+          </div>
 
-    <div className="col-12 col-md-6 text-end">
-      <img src={Images.image1} alt="about CoreBiz Labs" className="about-img" />
-    </div>
-  </div>
-
-
-       
+          <div className="col-12 col-md-6 text-end">
+            <img
+              src={Images.image1}
+              alt="about CoreBiz Labs"
+              className="about-img"
+            />
+          </div>
+        </div>
       </div>
 
       {/* ✅ Services Section */}
@@ -132,177 +132,165 @@ useEffect(() => {
           <div className="col-12">
             <ul className="services-list">
               <li className="service-item">
-            
-              Full Stack Web Development
+                Full Stack Web Development
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
-                 
                 Mobile App Development
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
-               
                 UI / UX Design
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
-              
                 AI Integration & Automation
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
-             
                 Custom AI Bots
                 <span class="arrow-circle">↗</span>
               </li>
             </ul>
           </div>
         </div>
-         
-
       </div>
-    
-    <div className="section stats-section container ">
-  <div className="row">
-    <div className="col-12">
-      <h6 className="section-label">Our Achievements</h6>
-      <h2 className="section-title">
-        Driving measurable success through innovation and customer trust
-      </h2>
-    </div>
-  </div>
 
- {/* ✅ Stats Grid Updated to 4 Items */}
-<div className="row stats-row text-center mt-5">
-  <div className="col-sm-6 col-md-3 stat-box">
-    <h2 className="stat-number">100%</h2>
-    <h5 className="stat-title">Client Satisfaction</h5>
-  </div>
-
-  <div className="col-sm-6 col-md-3 stat-box">
-    <h2 className="stat-number">10+</h2>
-    <h5 className="stat-title">Years of Experience</h5>
-  </div>
-
-  <div className="col-sm-6 col-md-3 stat-box">
-    <h2 className="stat-number">50+</h2>
-    <h5 className="stat-title">Successful Projects</h5>
-  </div>
-
-  {/* ✅ Newly added stat below */}
-  <div className="col-sm-6 col-md-3 stat-box">
-    <h2 className="stat-number">15+</h2>
-    <h5 className="stat-title">Industry Experts</h5>
-  </div>
-</div>
-
-</div>
-  <div className="tech-marquee container">
-          <div className="marquee-track">
-            <div className="tech-item">
-              <i className="devicon-html5-plain"></i>
-              <span>HTML</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-css3-plain"></i>
-              <span>CSS</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-javascript-plain"></i>
-              <span>JavaScript</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-react-original"></i>
-              <span>React</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-nodejs-plain"></i>
-              <span>Node.js</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-laravel-plain"></i>
-              <span>Laravel</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-mysql-plain"></i>
-              <span>MySQL</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-php-plain"></i>
-              <span>PHP</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-flutter-plain"></i>
-              <span>Flutter</span>
-            </div>
-            {/* 
-    <!-- Duplicate for smooth infinite scroll --> */}
-            <div className="tech-item">
-              <i className="devicon-html5-plain"></i>
-              <span>HTML</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-css3-plain"></i>
-              <span>CSS</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-javascript-plain"></i>
-              <span>JavaScript</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-react-original"></i>
-              <span>React</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-nodejs-plain"></i>
-              <span>Node.js</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-laravel-plain"></i>
-              <span>Laravel</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-mysql-plain"></i>
-              <span>MySQL</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-php-plain"></i>
-              <span>PHP</span>
-            </div>
-            <div className="tech-item">
-              <i className="devicon-flutter-plain"></i>
-              <span>Flutter</span>
-            </div>
+      <div className="section stats-section container ">
+        <div className="row">
+          <div className="col-12">
+            <h6 className="section-label">Our Achievements</h6>
+            <h2 className="section-title">
+              Driving measurable success through innovation and customer trust
+            </h2>
           </div>
-        </div>     
-<div className="section container about-accordion-section">
-  <div className="row align-items-center">
+        </div>
 
-    {/* Left Side – Text + Image */}
-    <div className="col-12 col-md-6 content-wrapper">
-      <h6 className="section-label">How We Work</h6>
-      <h2 className="section-title">
-        Transforming Vision <br /> Into Reality
-      </h2>
-    <p className="section-text">
-  At Corebiz Labs, we turn ideas into powerful digital experiences. From concept
-  to execution, our strategy-driven approach helps businesses accelerate growth,
-  improve efficiency, and stand out in the digital world.
-  <br />
+        {/* ✅ Stats Grid Updated to 4 Items */}
+        <div className="row stats-row text-center mt-5">
+          <div className="col-sm-6 col-md-3 stat-box">
+            <h2 className="stat-number">100%</h2>
+            <h5 className="stat-title">Client Satisfaction</h5>
+          </div>
 
-</p>
-      <button className="quote-btn">Get a Quote ↗</button>
-    </div>
-<div className="col-12 col-sm-12 col-lg-6">
-    <img src={Images.image2} alt="image2" className="about-img"/>
-</div>
-    {/* Right Side – Accordion */}
-    
+          <div className="col-sm-6 col-md-3 stat-box">
+            <h2 className="stat-number">10+</h2>
+            <h5 className="stat-title">Years of Experience</h5>
+          </div>
 
-  </div>
-</div>
+          <div className="col-sm-6 col-md-3 stat-box">
+            <h2 className="stat-number">50+</h2>
+            <h5 className="stat-title">Successful Projects</h5>
+          </div>
 
+          {/* ✅ Newly added stat below */}
+          <div className="col-sm-6 col-md-3 stat-box">
+            <h2 className="stat-number">15+</h2>
+            <h5 className="stat-title">Industry Experts</h5>
+          </div>
+        </div>
+      </div>
+      <div className="tech-marquee container">
+        <div className="marquee-track">
+          <div className="tech-item">
+            <i className="devicon-html5-plain"></i>
+            <span>HTML</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-css3-plain"></i>
+            <span>CSS</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-javascript-plain"></i>
+            <span>JavaScript</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-react-original"></i>
+            <span>React</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-nodejs-plain"></i>
+            <span>Node.js</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-laravel-plain"></i>
+            <span>Laravel</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-mysql-plain"></i>
+            <span>MySQL</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-php-plain"></i>
+            <span>PHP</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-flutter-plain"></i>
+            <span>Flutter</span>
+          </div>
+          {/* 
+    <!-- Duplicate for smooth infinite scroll --> */}
+          <div className="tech-item">
+            <i className="devicon-html5-plain"></i>
+            <span>HTML</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-css3-plain"></i>
+            <span>CSS</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-javascript-plain"></i>
+            <span>JavaScript</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-react-original"></i>
+            <span>React</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-nodejs-plain"></i>
+            <span>Node.js</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-laravel-plain"></i>
+            <span>Laravel</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-mysql-plain"></i>
+            <span>MySQL</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-php-plain"></i>
+            <span>PHP</span>
+          </div>
+          <div className="tech-item">
+            <i className="devicon-flutter-plain"></i>
+            <span>Flutter</span>
+          </div>
+        </div>
+      </div>
+      <div className="section container about-accordion-section">
+        <div className="row align-items-center">
+          {/* Left Side – Text + Image */}
+          <div className="col-12 col-md-6 content-wrapper">
+            <h6 className="section-label">How We Work</h6>
+            <h2 className="section-title">
+              Transforming Vision <br /> Into Reality
+            </h2>
+            <p className="section-text">
+              At Corebiz Labs, we turn ideas into powerful digital experiences.
+              From concept to execution, our strategy-driven approach helps
+              businesses accelerate growth, improve efficiency, and stand out in
+              the digital world.
+              <br />
+            </p>
+            <button className="quote-btn">Get a Quote ↗</button>
+          </div>
+          <div className="col-12 col-sm-12 col-lg-6">
+            <img src={Images.image2} alt="image2" className="about-img" />
+          </div>
+          {/* Right Side – Accordion */}
+        </div>
+      </div>
     </>
   );
 }
