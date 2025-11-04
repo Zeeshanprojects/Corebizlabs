@@ -9,14 +9,6 @@
   width: 250px;
   height: auto;
 }
-
-.brand-text {
-  font-size: 22px;
-  font-weight: 700;
-  color: #A1FF23;
-}
-
-/* Glass Menu Center */
 .glass-menu {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
@@ -36,14 +28,9 @@
 }
 
 .nav-link:hover {
-  background: rgba(255, 255, 255, 0.08);
-}
-
-/* Active Highlight */
-.highlight {
   background: #A1FF23;
   color: #000 !important;
-  font-weight: 600;
+
 }
 
 /* CTA Button */
