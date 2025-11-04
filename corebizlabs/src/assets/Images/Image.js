@@ -12,6 +12,10 @@ const Images = {
   sliderimage6: new URL("./slider8.webp", import.meta.url).href,
   sliderimage8: new URL("./slider9.webp", import.meta.url).href,
   sliderimage9: new URL("./slider10.webp", import.meta.url).href,
-
+  fullstackdevelopment:new URL("./coding.png",import.meta.url).href,
+ Mobileappdevelopment:new URL("./mobile-development.png",import.meta.url).href,
+ UI:new URL("./ux-design.png",import.meta.url).href,
+  AIintegration:new URL("./integrations.png",import.meta.url).href,
+   Chat:new URL("./robotics.png",import.meta.url).href,
 };
 export default Images;

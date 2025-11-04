@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 import Images from "../assets/Images/Image";
 
 export default function Header() {
@@ -28,23 +29,23 @@ export default function Header() {
         >
           <ul className="navbar-nav glass-menu py-2 px-3">
             <li className="nav-item">
-              <a className="nav-link active highlight" href="#">
-                Home <span className="arrow">▾</span>
-              </a>
+              <Link className="nav-link active highlight" to="/">
+                Home 
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/about">
                 About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Pages 
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Pages ▾
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Blogs ▾
+                Blogs 
               </a>
             </li>
             <li className="nav-item">
