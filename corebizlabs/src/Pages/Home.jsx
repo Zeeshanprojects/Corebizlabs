@@ -170,39 +170,42 @@ export default function Home() {
       </div>
 
       {/* ✅ Services Section */}
-      <div className="section services-section container ">
-        <div className="row">
-          <div className="col-12">
-            <h6 className="section-label">Our Services</h6>
-            <h2 className="section-title">Make your brand exceptional</h2>
-          </div>
+      <div className="section services-section container">
+  <div className="row align-items-center"> {/* ✅ vertical center alignment */}
+    <div className="col-sm-12 col-md-6">
+      <h6 className="section-label">Our Services</h6>
+      <h2 className="section-title">Make your brand exceptional</h2>
 
-          <div className="col-sm-12 col-md-6">
-            <ul className="services-list">
-              <li className="service-item">
-                Full Stack Web Development
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                Mobile App Development
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                UI / UX Design
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                AI Integration & Automation
-                <span class="arrow-circle">↗</span>
-              </li>
-              <li className="service-item">
-                Custom AI Bots
-                <span class="arrow-circle">↗</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <ul className="services-list">
+        <li className="service-item">
+          Full Stack Web Development
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          Mobile App Development
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          UI / UX Design
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          AI Integration & Automation
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          Custom AI Bots
+          <span class="arrow-circle">↗</span>
+        </li>
+      </ul>
+    </div>
+
+    <div className="col-sm-12 col-md-6 image-col"> {/* ✅ added class */}
+      <img src={Images.image3} alt="service" className="service-img"/>
+    </div>
+  </div>
+</div>
+
 
       <div className="section stats-section container ">
         <div className="row">
