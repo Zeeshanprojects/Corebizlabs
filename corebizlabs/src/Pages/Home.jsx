@@ -177,7 +177,7 @@ export default function Home() {
             <h2 className="section-title">Make your brand exceptional</h2>
           </div>
 
-          <div className="col-12">
+          <div className="col-sm-12 col-md-6">
             <ul className="services-list">
               <li className="service-item">
                 Full Stack Web Development

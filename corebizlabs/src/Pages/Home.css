@@ -280,7 +280,7 @@ margin-top: 50px;
 }
 
 .service-item {
-  font-size: 30px !important;
+  font-size: 25px !important;
   color: white !important;
   display: flex;
   justify-content: space-between;
@@ -328,17 +328,6 @@ margin-top: 50px;
   transition: 0.4s ease;
   position: relative;
 }
-
-/* .service-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background: #a5ff0d;
-  transition: width 0.4s ease-out;
-} */
 
 .service-item:hover::before {
   width: 100%;
