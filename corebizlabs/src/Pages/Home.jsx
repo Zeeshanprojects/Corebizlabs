@@ -8,22 +8,23 @@ export default function Home() {
 
   return (
     <>
-      <div className="hero-section container ">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="custom-heading">
-              CoreBiz Labs:
-              <br />
-              Engineering Your <span>Digital</span> Future
-            </h1>
+<div className="hero-section container">
+  <div className="row">
+    <div className="col-12">
+      <h1 className="custom-heading">
+        CoreBiz Labs:
+        <br />
+        Creative Design / <span>Studio</span>
+      </h1>
 
-            <p className="hero-text">
-              We create with purpose. Inspire with impactful ideas.
-              <br /> Ignite your brand and identity.
-            </p>
-          </div>
-        </div>
-      </div>
+      <p className="hero-text">
+        We create with purpose. Inspire with impactful ideas.
+        <br /> Ignite your brand and identity.
+      </p>
+    </div>
+  </div>
+</div>
+
 
       <div className="section work-process-section  container py-5">
         <div className="row  mb-4">
@@ -39,8 +40,8 @@ export default function Home() {
           <div className="col-sm-12 col-md-3">
             <div className="process-card ">
               <div className="process-step">01</div>
-              <h2>Research & Analysis</h2>
-              <p className="para">
+              <h4>Research & Analysis</h4>
+              <p >
                 We deeply analyze business requirements to discover
                 opportunities and define the right strategy.
               </p>
@@ -50,8 +51,8 @@ export default function Home() {
           <div className="col-sm-12 col-md-3">
             <div className="process-card">
               <div className="process-step">02</div>
-              <h2>Planning & Strategy</h2>
-              <p className="para">
+              <h4>Planning & Strategy</h4>
+              <p >
                 Clear project roadmap with smart planning to ensure seamless
                 execution and timely delivery.
               </p>
@@ -61,8 +62,8 @@ export default function Home() {
           <div className="col-sm-12 col-md-3">
             <div className="process-card ">
               <div className="process-step">03</div>
-              <h2>Design & Development</h2>
-              <p className="para">
+              <h4>Design & Development</h4>
+              <p >
                 We craft responsive, scalable & high-performance solutions with
                 cutting-edge technology.
               </p>
@@ -72,8 +73,8 @@ export default function Home() {
           <div className="col-sm-12 col-md-3">
             <div className="process-card">
               <div className="process-step">04</div>
-              <h2>Launch & Support</h2>
-              <p className="para">
+              <h4>Launch & Support</h4>
+              <p >
                 We deploy the product with ongoing support to ensure long-term
                 success and improvements.
               </p>

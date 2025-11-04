@@ -5,21 +5,18 @@
   text-align: center;
 }
 .custom-heading {
-  font-size: clamp(10px, 7.5vw, 145px);
+  font-size: clamp(10px, 8vw, 100px);
   font-weight: 100;
   color: #fff;
   line-height: 1.05;
   letter-spacing: -1px;
   width: 100%;
-  max-width: 1200px; /* Wider than before */
-  margin: 0 auto 20px;
+margin-top: 50px;
+
   opacity: 0;
   animation: fadeUp 1.3s ease forwards;
 }
-.para{
-  text-align: justify;
-  hyphens: auto !important;
-}
+
 .custom-heading span {
   background: linear-gradient(90deg, #d7ff75, #9fff00);
   -webkit-background-clip: text;
