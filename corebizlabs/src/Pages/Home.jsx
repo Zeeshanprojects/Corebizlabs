@@ -346,8 +346,9 @@ export default function Home() {
   </div>
 </div>
 
-<div className="section"></div>
 <div className="container">
+   <h6 className="section-label">FAQ</h6>
+      <h2 className="section-title">Make your brand exceptional</h2>
   <div className="row">
    <div className="accordion" id="accordionExample">
   <div className="accordion-item">
