@@ -1,4 +1,9 @@
 import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/free-mode";
 import Images from "../assets/Images/Image";
 import "./Home.css";
 export default function Home() {
@@ -12,8 +17,7 @@ export default function Home() {
   <div className="row">
     <div className="col-12">
       <h1 className="custom-heading">
-        CoreBiz Labs:
-        <br />
+       
         Creative Design / <span>Studio</span>
       </h1>
 
@@ -25,8 +29,51 @@ export default function Home() {
   </div>
 </div>
 
+  <div className="portfolio-section">
+      <div className="explore-circle">
+        <span>Explore More</span>
+      </div>
 
-      <div className="section work-process-section  container py-5">
+     <Swiper
+  modules={[Navigation]}
+  navigation={true}
+  slidesPerView={"auto"}
+  spaceBetween={20}
+  className="mySwiper"
+>
+  <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage1} alt="Project 1" />
+  </SwiperSlide>
+  <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage2} alt="Project 2" />
+  </SwiperSlide>
+  <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage3} alt="Project 3" />
+  </SwiperSlide>
+  <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage4} alt="Project 1" />
+  </SwiperSlide>
+  <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage5} alt="Project 2" />
+  </SwiperSlide>
+  <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage6} alt="Project 3" />
+  </SwiperSlide>
+  <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage7} alt="Project 3" />
+  </SwiperSlide>
+    <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage8} alt="Project 3" />
+  </SwiperSlide>
+    <SwiperSlide className="portfolio-card">
+    <img src={Images.sliderimage9} alt="Project 3" />
+  </SwiperSlide>
+</Swiper>
+    </div>
+
+
+
+      <div className="work-process-section  container ">
         <div className="row  mb-4">
           <div className="col-12">
             <h6 className="section-label">Our Work Process</h6>

@@ -5,14 +5,12 @@
   text-align: center;
 }
 .custom-heading {
-  font-size: clamp(10px, 8vw, 100px);
-  font-weight: 100;
+  font-size: clamp(10px, 8vw, 90px);
   color: #fff;
   line-height: 1.05;
   letter-spacing: -1px;
   width: 100%;
 margin-top: 50px;
-
   opacity: 0;
   animation: fadeUp 1.3s ease forwards;
 }
@@ -35,9 +33,84 @@ margin-top: 50px;
   opacity: 0;
   animation: fadeUp 1.8s ease forwards;
 }
-.work-process-section {
-  margin-top: 100px;
+.portfolio-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #0f0f0f;
+  padding: 100px 80px;
+  overflow: hidden;
 }
+
+/* Explore More Circle */
+.explore-circle {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #cfcfcf;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: 0.3s ease;
+}
+
+.explore-circle span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.explore-circle:hover {
+  background: #ffffff10;
+  transform: scale(1.05);
+}
+
+/* Cards */
+.mySwiper {
+  width: 100%;
+}
+
+.portfolio-card {
+  width: 400px !important;
+  height: 450px;
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #202020;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.07);
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .portfolio-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 20px;
+  }
+
+  .explore-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .portfolio-card {
+    width: 320px !important;
+    height: 380px;
+  }
+}
+
+
 .work-process-section .process-card {
   height: 100%;
   color: white;
