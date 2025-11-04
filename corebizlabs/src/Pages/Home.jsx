@@ -29,7 +29,7 @@ export default function Home() {
   </div>
 </div>
 
-  <div className="portfolio-section">
+  <div className=" mt-5 portfolio-section">
       <div className="explore-circle">
         <span>Explore More</span>
       </div>
@@ -73,7 +73,7 @@ export default function Home() {
 
 
 
-      <div className="work-process-section  container ">
+      <div className="work-process-section  container mt-5">
         <div className="row  mb-4">
           <div className="col-12">
             <h6 className="section-label">Our Work Process</h6>
@@ -130,18 +130,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="section why-section container ">
-        <div className="row">
-          <div className="col-12 col-lg-12">
-            <h6 className="section-label">Why Choose Us</h6>
-            <h2 className="section-title">
-              Connecting businesses with their audiences and individuals with
-              their dreams. Our path forward is one of continuous growth
-            </h2>
-            <button className="quote-btn">Get a Quote ↗</button>
-          </div>
-        </div>
-      </div>
+     <div className="section"></div>
 
       <div className="section about-section container ">
         <div className="row align-items-center mb-5">
@@ -168,43 +157,43 @@ export default function Home() {
           </div>
         </div>
       </div>
+ <div className="section why-section container ">
+        <div className="row">
+          <div className="col-12 col-lg-12">
+            <h6 className="section-label">Why Choose Us</h6>
+            <h2 className="section-title">
+              Connecting businesses with their audiences and individuals with
+              their dreams. Our path forward is one of continuous growth
+            </h2>
+            <button className="quote-btn">Get a Quote ↗</button>
+          </div>
+        </div>
+      </div>
 
-      {/* ✅ Services Section */}
-      <div className="section services-section container">
-  <div className="row align-items-center"> {/* ✅ vertical center alignment */}
-    <div className="col-sm-12 col-md-6">
-      <h6 className="section-label">Our Services</h6>
-      <h2 className="section-title">Make your brand exceptional</h2>
-
-      <ul className="services-list">
-        <li className="service-item">
-          Full Stack Web Development
-          <span class="arrow-circle">↗</span>
-        </li>
-        <li className="service-item">
-          Mobile App Development
-          <span class="arrow-circle">↗</span>
-        </li>
-        <li className="service-item">
-          UI / UX Design
-          <span class="arrow-circle">↗</span>
-        </li>
-        <li className="service-item">
-          AI Integration & Automation
-          <span class="arrow-circle">↗</span>
-        </li>
-        <li className="service-item">
-          Custom AI Bots
-          <span class="arrow-circle">↗</span>
-        </li>
-      </ul>
-    </div>
-
-    <div className="col-sm-12 col-md-6 image-col"> {/* ✅ added class */}
-      <img src={Images.image3} alt="service" className="service-img"/>
-    </div>
-  </div>
-</div>
+        <div className="section container about-accordion-section">
+        <div className="row align-items-center">
+          {/* Left Side – Text + Image */}
+          <div className="col-12 col-md-6 content-wrapper">
+            <h6 className="section-label">How We Work</h6>
+            <h2 className="section-title">
+              Transforming Vision <br /> Into Reality
+            </h2>
+            <p className="section-text">
+              At Corebiz Labs, we turn ideas into powerful digital experiences.
+              From concept to execution, our strategy-driven approach helps
+              businesses accelerate growth, improve efficiency, and stand out in
+              the digital world.
+              <br />
+            </p>
+            <button className="quote-btn">Get a Quote ↗</button>
+          </div>
+          <div className="col-12 col-sm-12 col-lg-6">
+            <img src={Images.image2} alt="image2" className="about-img" />
+          </div>
+          {/* Right Side – Accordion */}
+        </div>
+      </div>
+     
 
 
       <div className="section stats-section container ">
@@ -319,29 +308,124 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="section container about-accordion-section">
-        <div className="row align-items-center">
-          {/* Left Side – Text + Image */}
-          <div className="col-12 col-md-6 content-wrapper">
-            <h6 className="section-label">How We Work</h6>
-            <h2 className="section-title">
-              Transforming Vision <br /> Into Reality
-            </h2>
-            <p className="section-text">
-              At Corebiz Labs, we turn ideas into powerful digital experiences.
-              From concept to execution, our strategy-driven approach helps
-              businesses accelerate growth, improve efficiency, and stand out in
-              the digital world.
-              <br />
-            </p>
-            <button className="quote-btn">Get a Quote ↗</button>
-          </div>
-          <div className="col-12 col-sm-12 col-lg-6">
-            <img src={Images.image2} alt="image2" className="about-img" />
-          </div>
-          {/* Right Side – Accordion */}
-        </div>
+    
+     {/* ✅ Services Section */}
+      <div className="section services-section container">
+  <div className="row align-items-center"> {/* ✅ vertical center alignment */}
+    <div className="col-sm-12 col-md-6">
+      <h6 className="section-label">Our Services</h6>
+      <h2 className="section-title">Make your brand exceptional</h2>
+
+      <ul className="services-list">
+        <li className="service-item">
+          Full Stack Web Development
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          Mobile App Development
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          UI / UX Design
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          AI Integration & Automation
+          <span class="arrow-circle">↗</span>
+        </li>
+        <li className="service-item">
+          Custom AI Bots
+          <span class="arrow-circle">↗</span>
+        </li>
+      </ul>
+    </div>
+
+    <div className="col-sm-12 col-md-6 image-col"> {/* ✅ added class */}
+      <img src={Images.image3} alt="service" className="service-img"/>
+    </div>
+  </div>
+</div>
+
+<div className="section"></div>
+<div className="container">
+  <div className="row">
+   <div className="accordion" id="accordionExample">
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingOne">
+      <button
+        className="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+        aria-controls="collapseOne"
+      >
+What Kinf of services do you offer?
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      className="accordion-collapse collapse show"
+      aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+       We specialize in full-stack web development, native and hybrid mobile app development, UI/UX design, and advanced AI integrations, including automation and custom AI bots. We handle projects from concept to deployment.
       </div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingTwo">
+      <button
+        className="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+        aria-expanded="false"
+        aria-controls="collapseTwo"
+      >
+        What is you Development Process
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      className="accordion-collapse collapse"
+      aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+     Our process is collaborative and agile. We start with a deep-dive "Discovery" phase to understand your goals, followed by "Design & Develop" where we build and iterate, and finally "Deploy & Support" to launch your product and ensure its success.
+      </div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingThree">
+      <button
+        className="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+        aria-expanded="false"
+        aria-controls="collapseThree"
+      >
+    Where are you located
+      </button>
+    </h2>
+    <div
+      id="collapseThree"
+      className="accordion-collapse collapse"
+      aria-labelledby="headingThree"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+       We are based in beautiful Laguna Beach, California, but we serve clients globally. We are fully equipped for remote collaboration.
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
     </>
   );
 }
