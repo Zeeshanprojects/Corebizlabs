@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Preloader from "./Components/Preloader";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
+import Contact from "./Pages/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About/>}/>
             <Route path="/portfilio" element={<Portfolio/>}/>
+            <Route path="/contact" element={<Contact/>}/>
           </Routes>
           <Footer />
         </BrowserRouter>

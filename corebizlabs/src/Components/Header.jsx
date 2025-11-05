@@ -39,19 +39,14 @@ export default function Header() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/portfolio">
-                Pages 
+              <Link className="nav-link" to="/portfilio">
+                Portfolio
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Blogs 
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/contact">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
