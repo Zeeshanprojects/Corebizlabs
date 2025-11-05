@@ -31,7 +31,7 @@ export default function Home() {
             <br />
             Ignite your brand and identity.
           </p>
-            <button className="quote-btn">Get a Quote ↗</button>
+            <button className="quote-btn mt-3">Get a Quote ↗</button>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@ export default function Home() {
       </div>
 
       <div className="work-process-section  container mt-5 ">
-        <div className="row  mb-4">
+        <div className="row  ">
           <div className="col-12">
             <h6 className="section-label">Our Work Process</h6>
             <h2 className="section-title ">
@@ -139,10 +139,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="section"></div>
+     
 
-      <div className="section about-section container ">
-        <div className="row align-items-center mb-5">
+      <div className="section about-section container mt-5">
+        <div className="row align-items-center ">
           <div className="col-12 col-md-6">
             <h6 className="section-label">Who We Are</h6>
             <h2 className="section-title">
@@ -166,19 +166,28 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="section why-section container ">
-        <div className="row">
-          <div className="col-12 col-lg-12">
-            <h6 className="section-label">Why Choose Us</h6>
-            <h2 className="section-title">
-              Connecting businesses with their audiences and individuals with
-              their dreams. Our path forward is one of continuous growth, driven
-              by innovation and unwavering commitment to excellence.
-            </h2>
-            <button className="quote-btn">Get a Quote ↗</button>
-          </div>
-        </div>
-      </div>
+     <div className="section why-section container">
+  <div className="row">
+    <div className="col-12 col-lg-12">
+      <h6 className="section-label">Why Choose Us</h6>
+      <h2 className="section-title">
+        Empowering Businesses Through Innovation
+      </h2>
+    <p className="text-white">
+  We connect brands with their audiences and help individuals transform their 
+  ideas into impactful digital solutions. From intuitive websites to immersive 
+  digital experiences, we design, develop, and deliver with purpose. Our work 
+  is powered by creativity, guided by data, and built on modern technology 
+  that scales with your success. Together, we create digital value that drives 
+  growth, strengthens your brand presence, and shapes a future full of new 
+  possibilities.
+</p>
+
+      <button className="quote-btn ">Get a Quote ↗</button>
+    </div>
+  </div>
+</div>
+
 
       <div className="section container about-accordion-section">
         <div className="row align-items-center">
@@ -241,6 +250,10 @@ export default function Home() {
       <div className="tech-marquee container">
         <div className="marquee-track">
           <div className="tech-item">
+             <div className="tech-item">
+            <i className="devicon-php-plain"></i>
+            <span>Design</span>
+          </div>
             <i className="devicon-html5-plain"></i>
             <span>HTML</span>
           </div>
@@ -272,12 +285,17 @@ export default function Home() {
             <i className="devicon-php-plain"></i>
             <span>PHP</span>
           </div>
+
           <div className="tech-item">
             <i className="devicon-flutter-plain"></i>
             <span>Flutter</span>
           </div>
           {/* 
     <!-- Duplicate for smooth infinite scroll --> */}
+     <div className="tech-item">
+            <i className="devicon-html5-plain"></i>
+            <span>Design</span>
+          </div>
           <div className="tech-item">
             <i className="devicon-html5-plain"></i>
             <span>HTML</span>
@@ -333,10 +351,6 @@ export default function Home() {
               </li>
               <li className="service-item">
                 Mobile App Development
-                <span class="arrow-circle">↗</span>
-              </li>
-               <li className="service-item">
-           Custom Software Development
                 <span class="arrow-circle">↗</span>
               </li>
                 <li className="service-item">

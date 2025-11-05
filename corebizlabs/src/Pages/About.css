@@ -1,0 +1,56 @@
+.background {
+  position: relative;
+  width: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay-text h1 {
+  font-size: 3rem; /* Adjust as needed */
+
+  color: #fff;
+}
+.circular-border {
+  position: relative;
+  padding: 120px;
+  height: 150px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.circular-border h1 {
+  color: #ffffff;
+  font-size: 5rem;
+  z-index: 2;
+}
+.circular-border::before,
+.circular-border::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 65%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 200px; /* Creates the capsule shape */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circular-border::after {
+  width: 90%;
+  height: 75%;
+  border-color: rgba(255, 255, 255, 0.15);
+}
