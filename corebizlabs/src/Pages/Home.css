@@ -48,7 +48,7 @@
 }
 
 .custom-heading span {
-  background: linear-gradient(90deg, #d7ff75, #9fff00);
+  background: linear-gradient(90deg, #d0ff71, #d0ff71);
   -webkit-background-clip: text;
   color: transparent;
   text-shadow: 0px 0px 14px rgba(159, 255, 0, 0.6);
@@ -165,7 +165,7 @@ color: #a1ff23 !important;
 .process-step {
   font-size: 50px;
   font-weight: 700;
-  color: #a8ff15;
+  color: #d0ff71;
   margin-bottom: 12px;
 }
 
@@ -179,7 +179,7 @@ color: #a1ff23 !important;
 .section-label {
   font-size: 1rem;
   text-transform: uppercase;
-  color: #a5ff0d;
+  color: #d0ff71;
   letter-spacing: 2px;
 
   margin-bottom: 8px;
@@ -191,7 +191,7 @@ color: #a1ff23 !important;
   content: "";
   width: 45px;
   height: 2px;
-  background: #a5ff0d;
+  background: #d0ff71;
   display: block;
   margin-top: 6px;
 }
@@ -218,8 +218,8 @@ color: #a1ff23 !important;
 .quote-btn {
   padding: 12px 28px;
   background: transparent;
-  border: 2px solid #a5ff0d;
-  color: #a5ff0d;
+  border: 2px solid #d0ff71;
+  color: #d0ff71;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -229,7 +229,7 @@ color: #a1ff23 !important;
 }
 
 .quote-btn:hover {
-  background: #a5ff0d;
+  background: #d0ff71;
   color: #000;
 }
 
@@ -275,7 +275,7 @@ color: #a1ff23 !important;
 }
 
 .tech-item:hover {
-  color: #a1ff23;
+  color: #d0ff71;
   text-shadow: 0px 0px 15px rgba(161, 255, 35, 0.7);
   transform: translateY(-4px);
 }
@@ -333,7 +333,7 @@ color: #a1ff23 !important;
   position: relative;
 }
 .service-item:hover {
-  color: #a1ff23 !important;
+  color: #d0ff71 !important;
 }
 .arrow-circle {
   font-size: 28px;
@@ -349,12 +349,12 @@ color: #a1ff23 !important;
 
 /* Hover Effect */
 .service-item:hover {
-  color: #a1ff23;
+  color: #d0ff71;
 }
 
 .service-item:hover .arrow-circle {
-  border-color: #a1ff23;
-  color: #a1ff23;
+  border-color: #d0ff71;
+  color: #d0ff71;
   transform: translateX(8px);
 }
 .service-img{
@@ -386,7 +386,7 @@ color: #a1ff23 !important;
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #96e70e !important;
+  color: #d0ff71 !important;
 }
 
 .stat-title {
@@ -430,13 +430,13 @@ color: #a1ff23 !important;
 
 /* Remove default background when expanded */
 .accordion-button:not(.collapsed) {
-  color: #a1ff23;
+  color: #d0ff71;
   background: transparent;
 }
 
 /* Hover Effect */
 .accordion-button:hover {
-  color: #a1ff23;
+  color: #d0ff71;
   transform: translateX(8px);
 }
 
@@ -452,7 +452,7 @@ color: #a1ff23 !important;
 /* Rotate + glow when active */
 .accordion-button:not(.collapsed)::after {
   transform: rotate(45deg);
-  color: #a1ff23;
+  color: #d0ff71;
 }
 
 /* Accordion Body */
@@ -466,7 +466,7 @@ color: #a1ff23 !important;
 /* Active state border highlight */
 .accordion-item.active,
 .accordion-item:has(.show) {
-  border-bottom: 1px solid #a1ff23;
+  border-bottom: 1px solid #d0ff71;
 }
 
 /* Mobile Responsive */
