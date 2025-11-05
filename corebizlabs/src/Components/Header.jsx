@@ -28,13 +28,13 @@ export default function Header() {
           id="navbarNav"
         >
           <ul className="navbar-nav glass-menu py-2 px-3">
-            <li className="nav-item">
+            <li className="nav-item ">
               <Link className="nav-link active highlight" to="/">
                 Home 
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link " to="/about">
                 About Us
               </Link>
             </li>

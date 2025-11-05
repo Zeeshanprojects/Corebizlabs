@@ -84,7 +84,7 @@ export default function Home() {
 
       <div className="work-process-section  container mt-5 ">
         <div className="row  ">
-          <div className="col-12">
+          <div className="col-12 mt-4">
             <h6 className="section-label">Our Work Process</h6>
             <h2 className="section-title ">
               We Follow a Strategic & Outcome-Driven Approach
@@ -94,7 +94,7 @@ export default function Home() {
 
         <div className="row text-center g-4">
           <div className="col-sm-12 col-md-3">
-            <div className="process-card ">
+            <div className="process-card mt-3">
               <div className="process-step">01</div>
               <h4>Research & Analysis</h4>
               <p>
@@ -105,7 +105,7 @@ export default function Home() {
           </div>
 
           <div className="col-sm-12 col-md-3">
-            <div className="process-card">
+            <div className="process-card mt-3">
               <div className="process-step">02</div>
               <h4>Planning & Strategy</h4>
               <p>
@@ -116,7 +116,7 @@ export default function Home() {
           </div>
 
           <div className="col-sm-12 col-md-3">
-            <div className="process-card ">
+            <div className="process-card mt-3">
               <div className="process-step">03</div>
               <h4>Design & Development</h4>
               <p>
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
 
           <div className="col-sm-12 col-md-3">
-            <div className="process-card">
+            <div className="process-card mt-3">
               <div className="process-step">04</div>
               <h4>Launch & Support</h4>
               <p>

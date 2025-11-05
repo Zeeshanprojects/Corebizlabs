@@ -9,8 +9,6 @@
   align-items: center;
   overflow: hidden;
 }
-
-/* Background video */
 .bg-video {
   position: absolute;
   top: 0;
@@ -30,7 +28,6 @@
   z-index: -1;
 }
 
-/* Content must be above video */
 .content {
   position: relative;
   z-index: 10;
@@ -51,15 +48,11 @@
   background: linear-gradient(90deg, #d0ff71, #d0ff71);
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: 0px 0px 14px rgba(159, 255, 0, 0.6);
+
 }
 
-
-
-/* Supporting text */
 .hero-text {
   font-size: clamp(16px, 1.7vw, 24px);
-
   color: #d9d9d9;
   max-width: 800px; /* Wider */
   margin: 0 auto;

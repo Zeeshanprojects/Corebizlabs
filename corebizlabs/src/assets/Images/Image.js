@@ -3,7 +3,6 @@ const Images = {
   image1: new URL("recom-thumb.webp", import.meta.url).href,
   image2: new URL("image2.webp", import.meta.url).href,
   image3: new URL("./image3.webp", import.meta.url).href,
-  background:new URL("./background.webp",import.meta.url).href,
   sliderimage1: new URL("./slider1.webp", import.meta.url).href,
   sliderimage2: new URL("./slider2.webp", import.meta.url).href,
   sliderimage3: new URL("./slider3.webp", import.meta.url).href,
