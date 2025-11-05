@@ -162,8 +162,7 @@ export default function Home() {
           <div className="col-12 col-lg-12">
             <h6 className="section-label">Why Choose Us</h6>
             <h2 className="section-title">
-              Connecting businesses with their audiences and individuals with
-              their dreams. Our path forward is one of continuous growth
+              Connecting businesses with their audiences and individuals with their dreams. Our path forward is one of continuous growth, driven by innovation and unwavering commitment to excellence.
             </h2>
             <button className="quote-btn">Get a Quote ↗</button>
           </div>
