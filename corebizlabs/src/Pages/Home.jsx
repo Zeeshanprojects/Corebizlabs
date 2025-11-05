@@ -23,7 +23,7 @@ export default function Home() {
       <div className="row">
         <div className="col-12">
           <h1 className="custom-heading">
-            Creative Design / <span>Studio</span>
+      Software Innovation <span>Creative Design</span>
           </h1>
 
           <p className="hero-text">
@@ -335,6 +335,14 @@ export default function Home() {
                 Mobile App Development
                 <span class="arrow-circle">↗</span>
               </li>
+               <li className="service-item">
+           Custom Software Development
+                <span class="arrow-circle">↗</span>
+              </li>
+                <li className="service-item">
+         Digital Marketing
+                <span class="arrow-circle">↗</span>
+              </li>
               <li className="service-item">
                 UI / UX Design
                 <span class="arrow-circle">↗</span>
@@ -358,8 +366,8 @@ export default function Home() {
       </div>
 
       <div className="container">
-        <h6 className="section-label">FAQ</h6>
-        <h2 className="section-title">Make your brand exceptional</h2>
+        <h6 className="section-label">Frequentely Asked Questions</h6>
+    <h2 className="section-title">Everything you need to stand out</h2>
         <div className="row">
           <div className="accordion" id="accordionExample">
             <div className="accordion-item">
@@ -372,7 +380,7 @@ export default function Home() {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  What Kinf of services do you offer?
+                  What Kind of services do you offer?
                 </button>
               </h2>
               <div
