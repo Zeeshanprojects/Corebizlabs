@@ -112,6 +112,9 @@
 .mySwiper {
   width: 100%;
 }
+.swiper-button-prev,.swiper-button-next{
+color: #a1ff23 !important;
+}
 
 .portfolio-card {
   width: 400px !important;
