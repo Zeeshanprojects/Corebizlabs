@@ -5,8 +5,20 @@ export default function Portfolio() {
 <>
 <div className="bg">
         <div className="capsule-border">
-          <h1>Portfolio</h1>
+          <h1>PORTFOLIO</h1>
         </div>
-      </div></>
+      </div>
+      <div className="container">
+        <div className='row'>
+          <div className='col-sm-12 col-md-6'>
+            <h1>Portfolio1</h1>
+          </div>
+           <div className='col-sm-12 col-md-6'>
+            <h1>Portfolio1</h1>
+          </div>
+
+        </div>
+      </div>
+      </>
   )
 }
