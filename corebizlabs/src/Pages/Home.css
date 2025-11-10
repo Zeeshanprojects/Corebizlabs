@@ -525,3 +525,8 @@ color: #d0ff71 !important;
     transform: translateY(0);
   }
 }
+@media (max-width:576px) {
+ .service-item{
+font-size: 20px !important;
+ } 
+}
