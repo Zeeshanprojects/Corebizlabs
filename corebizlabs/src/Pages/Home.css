@@ -46,7 +46,6 @@
 
 .custom-heading span {
   background: linear-gradient(90deg, #d0ff71, #d0ff71);
-  -webkit-background-clip: text;
   color: transparent;
 
 }
