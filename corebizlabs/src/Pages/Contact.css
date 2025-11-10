@@ -12,6 +12,8 @@
 
 .contact-card {
   background: #181818;
+    border: 1px solid #d0ff71; 
+    height: 100%;
   padding: 30px 20px;
   border-radius: 15px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
@@ -46,7 +48,7 @@
 /* --- MAP SECTION --- */
 .map-section {
   margin-top: 60px;
-  border-top: 3px solid #d0ff71;
+
 }
 
 .map-section iframe {
