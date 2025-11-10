@@ -26,5 +26,9 @@ const Images = {
   customersuccess: new URL("./specialist.png", import.meta.url).href,
   sustainability: new URL("./sustainability.png", import.meta.url).href,
   giving: new URL("./giving.png", import.meta.url).href,
+  time:new URL ("./time.png",import.meta.url).href,
+   email:new URL ("./mail.png",import.meta.url).href,
+    address:new URL ("./maps-and-flags.png",import.meta.url).href,
+   phone:new URL ("./phone.png",import.meta.url).href,
 };
 export default Images;
