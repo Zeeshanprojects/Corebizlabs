@@ -7,7 +7,7 @@ export default function About() {
     <>
       <div className="bg">
         <div className="capsule-border">
-          <h1>ABOUT US</h1>
+          <h1>About US</h1>
         </div>
       </div>
 

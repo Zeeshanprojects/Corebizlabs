@@ -8,7 +8,7 @@ export default function Contact() {
       {/* Hero Section */}
       <div className="bg">
         <div className="capsule-border">
-          <h1>CONTACT US</h1>
+          <h1>Contact US</h1>
         </div>
       </div>
 

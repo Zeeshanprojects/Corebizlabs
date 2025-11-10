@@ -7,7 +7,7 @@ export default function Portfolio() {
     <>
       <div className="bg">
         <div className="capsule-border">
-          <h1>PORTFOLIO</h1>
+          <h1>Portfolio</h1>
         </div>
       </div>
        <div className="container portfolio-section">
