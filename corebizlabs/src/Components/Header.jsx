@@ -5,7 +5,7 @@ import Images from "../assets/Images/Image";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg main-navbar">
+    <nav className="navbar navbar-expand-lg main-navbar ">
       <div className="container-fluid align-items-center">
         {/* Logo */}
         <a className="navbar-brand d-flex align-items-center" href="#">

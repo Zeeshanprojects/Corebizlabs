@@ -13,34 +13,32 @@ export default function Home() {
 
   return (
     <>
-<div className="hero-section">
-  <video className="bg-video" autoPlay loop muted playsInline>
-    <source src="/background-video.mp4" type="video/mp4" />
-  </video>
+      <div className="hero-section">
+        <video className="bg-video" autoPlay loop muted playsInline>
+          <source src="/background-video.mp4" type="video/mp4" />
+        </video>
 
-  <div className="content">
-    <div className="container">
-      <div className="row">
-        <div className="col-12">
-          <h1 className="custom-heading">
-      Software Innovation <span>Creative Design</span>
-          </h1>
+        <div className="content">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <h1 className="custom-heading">
+                  Software Innovation <span>Creative Design</span>
+                </h1>
 
-          <p className="hero-text">
-            We create with purpose. Inspire with impactful ideas.
-            <br />
-            Ignite your brand and identity.
-          </p>
-            <button className="quote-btn mt-3">Get a Quote ↗</button>
+                <p className="hero-text">
+                  We create with purpose. Inspire with impactful ideas.
+                  <br />
+                  Ignite your brand and identity.
+                </p>
+                <button className="quote-btn mt-3">Get a Quote ↗</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
-
-
-      <div className="  portfolio-section">
+      <div className="portfolio-section">
         <div className="explore-circle">
           <span>Explore More</span>
         </div>
@@ -139,8 +137,6 @@ export default function Home() {
         </div>
       </div>
 
-     
-
       <div className="section about-section container mt-5">
         <div className="row align-items-center ">
           <div className="col-12 col-md-6">
@@ -166,28 +162,28 @@ export default function Home() {
           </div>
         </div>
       </div>
-     <div className="section why-section container">
-  <div className="row">
-    <div className="col-12 col-lg-12">
-      <h6 className="section-label">Why Choose Us</h6>
-      <h2 className="section-title">
-        Empowering Businesses Through Innovation
-      </h2>
-    <p className="text-white">
-  We connect brands with their audiences and help individuals transform their 
-  ideas into impactful digital solutions. From intuitive websites to immersive 
-  digital experiences, we design, develop, and deliver with purpose. Our work 
-  is powered by creativity, guided by data, and built on modern technology 
-  that scales with your success. Together, we create digital value that drives 
-  growth, strengthens your brand presence, and shapes a future full of new 
-  possibilities.
-</p>
+      <div className="section why-section container">
+        <div className="row">
+          <div className="col-12 col-lg-12">
+            <h6 className="section-label">Why Choose Us</h6>
+            <h2 className="section-title">
+              Empowering Businesses Through Innovation
+            </h2>
+            <p className="text-white">
+              We connect brands with their audiences and help individuals
+              transform their ideas into impactful digital solutions. From
+              intuitive websites to immersive digital experiences, we design,
+              develop, and deliver with purpose. Our work is powered by
+              creativity, guided by data, and built on modern technology that
+              scales with your success. Together, we create digital value that
+              drives growth, strengthens your brand presence, and shapes a
+              future full of new possibilities.
+            </p>
 
-      <button className="quote-btn ">Get a Quote ↗</button>
-    </div>
-  </div>
-</div>
-
+            <button className="quote-btn ">Get a Quote ↗</button>
+          </div>
+        </div>
+      </div>
 
       <div className="section container about-accordion-section">
         <div className="row align-items-center">
@@ -250,10 +246,10 @@ export default function Home() {
       <div className="tech-marquee container">
         <div className="marquee-track">
           <div className="tech-item">
-             <div className="tech-item">
-            <i className="devicon-php-plain"></i>
-            <span>Design</span>
-          </div>
+            <div className="tech-item">
+              <i className="devicon-php-plain"></i>
+              <span>Design</span>
+            </div>
             <i className="devicon-html5-plain"></i>
             <span>HTML</span>
           </div>
@@ -292,7 +288,7 @@ export default function Home() {
           </div>
           {/* 
     <!-- Duplicate for smooth infinite scroll --> */}
-     <div className="tech-item">
+          <div className="tech-item">
             <i className="devicon-html5-plain"></i>
             <span>Design</span>
           </div>
@@ -353,8 +349,8 @@ export default function Home() {
                 Mobile App Development
                 <span class="arrow-circle">↗</span>
               </li>
-                <li className="service-item">
-         Digital Marketing
+              <li className="service-item">
+                Digital Marketing
                 <span class="arrow-circle">↗</span>
               </li>
               <li className="service-item">
@@ -381,7 +377,7 @@ export default function Home() {
 
       <div className="container">
         <h6 className="section-label">Frequentely Asked Questions</h6>
-    <h2 className="section-title">Everything you need to stand out</h2>
+        <h2 className="section-title">Everything you need to stand out</h2>
         <div className="row">
           <div className="accordion" id="accordionExample">
             <div className="accordion-item">
