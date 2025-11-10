@@ -33,7 +33,7 @@ export default function Header() {
             {/* Center Menu */}
             <ul className="navbar-nav glass-menu mb-3 mb-lg-0 mx-auto">
               <li className="nav-item">
-                <Link className="nav-link  highlight" to="/" onClick={() => window.scrollTo(0, 0)}>
+                <Link className="nav-link active highlight" to="/" onClick={() => window.scrollTo(0, 0)}>
                   HOME
                 </Link>
               </li>
