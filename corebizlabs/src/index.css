@@ -8,11 +8,7 @@ overflow-x: hidden !important;
     color: #d0ff71;
 }
 .bg {
-  background: linear-gradient(
-    180deg,
-    #18181b 0%,
-    rgba(201, 255, 20, 0.20) 100%
-  );
+  background: #1C1D1F;
   height: 50vh;
   width: 100%;
   display: flex;

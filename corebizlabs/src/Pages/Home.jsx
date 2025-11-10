@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <>
       <div className="hero-section">
-        <video className="bg-video" autoPlay loop muted playsInline>
-          <source src="/background-video.mp4" type="video/mp4" />
+        <video className="bg-video" autoPlay loop muted playsInline poster="/poster.webp">
+          <source src="/background-video.mp4" type="video/mp4"  />
         </video>
 
         <div className="content">
