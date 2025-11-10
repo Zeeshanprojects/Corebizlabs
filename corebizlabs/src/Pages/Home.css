@@ -98,7 +98,7 @@
   width: 100%;
 }
 .swiper-button-prev,.swiper-button-next{
-color: #a1ff23 !important;
+color: #d0ff71 !important;
 }
 
 .portfolio-card {
@@ -119,6 +119,35 @@ color: #a1ff23 !important;
 
 .portfolio-card:hover img {
   transform: scale(1.07);
+}
+
+
+.navbar-toggler-icon {
+  background-image: none; 
+  width: 30px;
+  height: 3px;
+  background-color: #d0ff71; 
+  display: block;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #d0ff71;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+.navbar-toggler-icon::before {
+  top: -10px;
+}
+
+.navbar-toggler-icon::after {
+  top: 10px;
 }
 
 /* ✅ Responsive */
