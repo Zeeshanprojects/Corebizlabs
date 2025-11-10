@@ -139,7 +139,7 @@ export default function Home() {
 
       <div className="section about-section container mt-5">
         <div className="row align-items-center ">
-          <div className="col-12 col-md-6 ps-3">
+          <div className="col-12 col-md-6 ps-3 mb-4 mb-md-0">
             <h6 className="section-label">Who We Are</h6>
             <h2 className="section-title">
               Your Partner in Digital Transformation
@@ -153,7 +153,7 @@ export default function Home() {
             <button className="quote-btn">Get a Quote ↗</button>
           </div>
 
-          <div className="col-12 col-md-6 text-end">
+          <div className="col-12 col-md-6 text-end ">
             <img
               src={Images.image1}
               alt="about CoreBiz Labs"
@@ -164,7 +164,7 @@ export default function Home() {
       </div>
       <div className="section why-section container">
         <div className="row">
-          <div className="col-12 col-lg-12 ps-3">
+          <div className="col-12 col-lg-12 ps-3 ">
             <h6 className="section-label">Why Choose Us</h6>
             <h2 className="section-title">
               Empowering Businesses Through Innovation
@@ -188,7 +188,7 @@ export default function Home() {
       <div className="section container about-accordion-section">
         <div className="row align-items-center">
           {/* Left Side – Text + Image */}
-          <div className="col-12 col-md-6 content-wrapper ps-3">
+          <div className="col-12 col-md-6 content-wrapper ps-3 mb-4 mb-md-0">
             <h6 className="section-label">How We Work</h6>
             <h2 className="section-title">
               Transforming Vision <br /> Into Reality
@@ -332,11 +332,11 @@ export default function Home() {
       </div>
 
       {/* ✅ Services Section */}
-      <div className="section services-section container">
+      <div className="section services-section container  ">
         <div className="row align-items-center">
           {" "}
           {/* ✅ vertical center alignment */}
-          <div className="col-sm-12 col-md-6 ps-">
+          <div className="col-sm-12 col-md-6 " >
             <h6 className="section-label">Our Services</h6>
             <h2 className="section-title">Make your brand exceptional</h2>
 
