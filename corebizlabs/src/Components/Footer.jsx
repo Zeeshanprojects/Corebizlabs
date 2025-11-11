@@ -66,12 +66,12 @@ export default function Footer() {
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                      Blog Post
+                    Privacy Policy
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                      Pricing
+                    Terms & Conditions
                     </a>
                   </p>
                 </div>
@@ -100,15 +100,10 @@ export default function Footer() {
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                      Laguna Beach, California,
-United States
+                      Laguna Beach
                     </a>
                   </p>
-                  <p>
-                    <a href="#!" className="text-white">
-                      Help
-                    </a>
-                  </p>
+               
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
