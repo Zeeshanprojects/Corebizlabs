@@ -36,10 +36,6 @@ export default function Footer() {
                     with their dreams. Our path forward is one of continuous
                     growth their dreams.
                   </p>
-                
-                   
-                  
-                
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
