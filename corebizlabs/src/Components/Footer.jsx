@@ -1,4 +1,5 @@
 import React from "react";
+import Images from "../assets/Images/Image";
 import "./Footer.css";
 
 export default function Footer() {
@@ -35,6 +36,10 @@ export default function Footer() {
                     with their dreams. Our path forward is one of continuous
                     growth their dreams.
                   </p>
+                
+                   
+                  
+                
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
@@ -66,17 +71,16 @@ export default function Footer() {
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                    Privacy Policy
+                      Privacy Policy
                     </a>
                   </p>
                   <p>
                     <a href="#!" className="text-white">
-                    Terms & Conditions
+                      Terms & Conditions
                     </a>
                   </p>
                 </div>
-                {/* Grid column */}
-                {/* Grid column */}
+
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
                   <h6 className="text-uppercase fw-bold">Contact</h6>
@@ -103,18 +107,11 @@ export default function Footer() {
                       Laguna Beach
                     </a>
                   </p>
-               
                 </div>
-                {/* Grid column */}
-                {/* Grid column */}
-
-                {/* Grid column */}
               </div>
-              {/* Grid row */}
             </div>
           </section>
-          {/* Section: Links  */}
-          {/* Copyright */}
+
           <div
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
