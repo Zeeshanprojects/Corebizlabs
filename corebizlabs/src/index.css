@@ -4,7 +4,9 @@ html,body{
 font-family: "Momo Trust Display", sans-serif !important;
 overflow-x: hidden !important;
 }
-
+.custom-color{
+      color: #d0ff71 !important;
+}
 .bg {
   background: #1C1D1F;
   height: 50vh;

@@ -21,8 +21,7 @@ export default function Footer() {
               <div className="row mt-3">
                 {/* Grid column */}
                 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto mb-4">
-                  {/* Content */}
-                  <h6 className="text-uppercase fw-bold">CorebizLabs</h6>
+                  {/* Content */} <h6 className="text-uppercase fw-bold custom-color">CorebizLabs</h6>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
@@ -32,9 +31,7 @@ export default function Footer() {
                     }}
                   />
                   <p>
-                    Connecting businesses with their audiences and individuals
-                    with their dreams. Our path forward is one of continuous
-                    growth their dreams.
+                    Connecting businesses with their audiences and individuals with their dreams. Our path forward is one of continuous growth, innovation, and meaningful impact — empowering every idea to reach its full potential and shaping a future driven by creativity and collaboration
                   </p>
                   <div className="d-flex gap-3 ">
                     <i className="fa-brands fa-facebook-f"></i>
@@ -48,7 +45,7 @@ export default function Footer() {
                 {/* Grid column */}
                 <div className="col-sm-12 col-md-12 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
-                  <h6 className="text-uppercase fw-bold">Quicks links</h6>
+                  <h6 className="text-uppercase fw-bold custom-color">Quicks links</h6>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
@@ -86,7 +83,7 @@ export default function Footer() {
 
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                   {/* Links */}
-                  <h6 className="text-uppercase fw-bold">Contact</h6>
+                  <h6 className="text-uppercase fw-bold custom-color">Contact</h6>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
@@ -119,9 +116,9 @@ export default function Footer() {
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
-            © 2020 Copyright:
+            © 2025 Copyright:
             <a className="text-white" href="https://mdbootstrap.com/">
-              MDBootstrap.com
+              CorBizLabs.com
             </a>
           </div>
           {/* Copyright */}
