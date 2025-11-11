@@ -36,6 +36,13 @@ export default function Footer() {
                     with their dreams. Our path forward is one of continuous
                     growth their dreams.
                   </p>
+                  <div className="d-flex gap-3 ">
+                    <i className="fa-brands fa-facebook-f"></i>
+
+                    <i className="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
+                    <i className="fa-brands fa-x-twitter "></i>
+                  </div>
                 </div>
                 {/* Grid column */}
                 {/* Grid column */}
