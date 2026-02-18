@@ -48,7 +48,6 @@
   background: linear-gradient(90deg, #d0ff71, #d0ff71);
   -webkit-background-clip: text;
   color: transparent;
-
 }
 
 .hero-text {
@@ -64,8 +63,8 @@
   display: flex;
   align-items: center;
   gap: 40px;
-    background-color:#0E0F11 !important;
-  padding:  60px;
+  background-color: #0e0f11 !important;
+  padding: 60px;
   overflow: hidden;
 }
 
@@ -97,8 +96,9 @@
 .mySwiper {
   width: 100%;
 }
-.swiper-button-prev,.swiper-button-next{
-color: #d0ff71 !important;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #d0ff71 !important;
 }
 
 .portfolio-card {
@@ -121,12 +121,11 @@ color: #d0ff71 !important;
   transform: scale(1.07);
 }
 
-
 .navbar-toggler-icon {
-  background-image: none; 
+  background-image: none;
   width: 30px;
   height: 3px;
-  background-color: #d0ff71; 
+  background-color: #d0ff71;
   display: block;
   position: relative;
 }
@@ -169,19 +168,19 @@ color: #d0ff71 !important;
   }
 }
 
-.work-process-section{
-  background-color:#0E0F11 !important;
-}
 .work-process-section .process-card {
   height: 100%;
-      background-color:#0E0F11 !important;
+
   color: white;
   text-align: start !important;
   border: 1px solid gray !important;
-  padding: 25px;
+  padding:20px;
   border-radius: 16px;
   transition: 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.process-card h4{
+  font-size: 22px;
 }
 
 .process-step {
@@ -194,7 +193,6 @@ color: #d0ff71 !important;
 /* Universal section spacing */
 .section {
   padding: 70px 0;
-  
 }
 
 /* Section label */
@@ -379,8 +377,8 @@ color: #d0ff71 !important;
   color: #d0ff71;
   transform: translateX(8px);
 }
-.service-img{
-  height: auto ;
+.service-img {
+  height: auto;
 }
 /* Each service item styling */
 .service-item {
@@ -425,7 +423,6 @@ color: #d0ff71 !important;
 }
 /* Accordion Container */
 .accordion {
-
   background: transparent;
   border: none;
 }
@@ -501,7 +498,6 @@ color: #d0ff71 !important;
   }
 }
 
-
 @media (min-width: 768px) {
   .stat-box:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
@@ -525,8 +521,8 @@ color: #d0ff71 !important;
     transform: translateY(0);
   }
 }
-@media (max-width:576px) {
- .service-item{
-font-size: 20px !important;
- } 
+@media (max-width: 576px) {
+  .service-item {
+    font-size: 20px !important;
+  }
 }
