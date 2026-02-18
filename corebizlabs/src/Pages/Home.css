@@ -167,24 +167,21 @@
     height: 380px;
   }
 }
-
 .work-process-section .process-card {
   height: 100%;
-
   color: white;
   text-align: start !important;
   border: 1px solid gray !important;
-  padding:18px;
+  padding: 18px;
   border-radius: 16px;
   transition: 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
-.process-card h4{
+.process-card h4 {
   font-size: 22px;
 }
 .process-card p {
   font-size: 15px;
-
 }
 .process-step {
   font-size: 50px;
@@ -192,8 +189,6 @@
   color: #d0ff71;
   margin-bottom: 12px;
 }
-
-/* Universal section spacing */
 .section {
   padding: 70px 0;
 }
