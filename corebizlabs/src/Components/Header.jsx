@@ -61,22 +61,58 @@ export default function Header() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
+                    <Link
+                      className="dropdown-item"
+                      to="/webdevelopment"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      Website Development
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
+                    <Link
+                      className="dropdown-item"
+                      to="/appdevelopment"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      Application Development
+                    </Link>
                   </li>
                   <li>
-                    <hr className="dropdown-divider" />
+                    <Link
+                      className="dropdown-item"
+                      to="/digitalmarketing"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      Digital Marketing
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
+                    <Link
+                      className="dropdown-item"
+                      to="/uiuxdesign"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      UI/UX Design
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/aiintegration"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      AI Integration & Automation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/customaibots"
+                      onClick={() => window.scrollTo(0, 0)}
+                    >
+                      Custom AI Bots
+                    </Link>
                   </li>
                 </ul>
               </li>
