@@ -6,6 +6,7 @@ export default function CustomAiBots() {
           <h1>Custom AI Bots</h1>
         </div>
       </div>
+      
   </>
 
   )
