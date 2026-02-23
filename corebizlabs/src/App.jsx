@@ -6,7 +6,7 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import Preloader from "./Components/Preloader";
 import About from "./Pages/About";
-import Portfolio from "./Pages/Portfolio";
+
 import Contact from "./Pages/Contact";
 import WebDevelopment from "./Pages/WebDevelopment";
 import AppDevelopment from "./Pages/AppDevelopment";
@@ -36,7 +36,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About/>}/>
-            <Route path="/portfolio" element={<Portfolio/>}/>
+          
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/webdevelopment" element={<WebDevelopment/>}/>
             <Route path="/appdevelopment" element={<AppDevelopment/>}/>
