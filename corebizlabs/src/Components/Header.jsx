@@ -121,15 +121,6 @@ export default function Header() {
               <li className="nav-item">
                 <Link
                   className="nav-link"
-                  to="/portfolio"
-                  onClick={() => window.scrollTo(0, 0)}
-                >
-                  PORTFOLIO
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
                   to="/contact"
                   onClick={() => window.scrollTo(0, 0)}
                 >
