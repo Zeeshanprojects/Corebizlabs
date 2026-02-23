@@ -8,6 +8,7 @@ import Preloader from "./Components/Preloader";
 import About from "./Pages/About";
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
+import WebDevelopment from "./Pages/WebDevelopment";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
             <Route path="/about" element={<About/>}/>
             <Route path="/portfolio" element={<Portfolio/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path="/webdevelopment" element={<WebDevelopment/>}/>
           </Routes>
           <Footer />
         </BrowserRouter>
