@@ -45,10 +45,25 @@
 .nav-link.active {
   background: #d0ff71 !important;
   color: #000 !important;
-
+}
+.dropdown-menu {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 12px;
+  transition: all 0.3s ease;
 }
 
-/* CTA Button */
+.dropdown-item {
+  color: #ffffff !important; /* 👈 Add this */
+}
+
+.dropdown-item:hover {
+  background: #d0ff71 !important;
+  color: #000 !important;
+}
+
 .quote-btn {
   background: #ffffff;
   color: #000;
