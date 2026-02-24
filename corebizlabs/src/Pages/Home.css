@@ -520,6 +520,10 @@
 }
 
 @media (max-width: 576px) {
+  .section-title{
+    font-size: 23px;
+
+  }
   .service-item {
     font-size: 20px !important;
   }
@@ -527,4 +531,5 @@
   position: relative;
   width: 100%;
   height: 60vh;
+}
 }

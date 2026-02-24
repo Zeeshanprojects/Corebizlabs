@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="work-process-section  container mt-5 ">
+      <div className="work-process-section  container  ">
         <div className="row  ">
           <div className="col-12 mt-4">
             <h6 className="section-label">Our Work Process</h6>
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="row text-center g-4">
+        <div className="row text-center g-4 ">
           <div className="col-sm-12 col-md-3">
             <div className="process-card mt-3">
               <div className="process-step">01</div>
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="section about-section container mt-5">
+      <div className="section about-section container ">
         <div className="row align-items-center ">
           <div className="col-12 col-md-6 ps-3 mb-4 mb-md-0">
             <h6 className="section-label">Who We Are</h6>
@@ -182,7 +182,7 @@ export default function Home() {
         </div>
 
         {/* ✅ Stats Grid Updated to 4 Items */}
-        <div className="row stats-row text-center mt-5">
+        <div className="row stats-row text-center ">
           <div className="col-sm-6 col-md-3 stat-box">
             <h2 className="stat-number">100%</h2>
             <h5 className="stat-title">Client Satisfaction</h5>
