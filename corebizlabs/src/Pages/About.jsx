@@ -1,8 +1,10 @@
 import React from "react";
 import Images from "../assets/Images/Image";
 import "./About.css";
+import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function About() {
+  useDocumentTitle("About | CoreBizLabs")
   return (
     <>
       <div className="bg">

@@ -1,8 +1,10 @@
 import React from "react";
 import "./Contact.css";
 import Images from "../assets/Images/Image";
+import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function Contact() {
+  useDocumentTitle("Contact | CoreBizLabs")
   return (
     <>
       {/* Hero Section */}

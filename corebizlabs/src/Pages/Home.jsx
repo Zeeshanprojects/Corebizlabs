@@ -1,11 +1,9 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Images from "../assets/Images/Image";
 import "./Home.css";
+import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 export default function Home() {
-  useEffect(() => {
-    document.title = "Home | Corebizlabs";
-  }, []);
+  useDocumentTitle("Home | CoreBizLabs");
 
   return (
     <>
@@ -165,43 +163,43 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section className="section stats-section">
-    <div className=" container px-3">
-        <div className="row">
-          <div className="col-12 ps-3">
-            <h6 className="section-label">Our Achievements</h6>
-            <h2 className="section-title">
-              Driving Measurable Success Through Innovation
-            </h2>
+      <section className="section stats-section">
+        <div className=" container px-3">
+          <div className="row">
+            <div className="col-12 ps-3">
+              <h6 className="section-label">Our Achievements</h6>
+              <h2 className="section-title">
+                Driving Measurable Success Through Innovation
+              </h2>
+            </div>
+          </div>
+
+          {/* ✅ Stats Grid Updated to 4 Items */}
+          <div className="row stats-row text-center ">
+            <div className="col-sm-6 col-md-3 stat-box">
+              <h2 className="stat-number">100%</h2>
+              <h5 className="stat-title">Client Satisfaction</h5>
+            </div>
+
+            <div className="col-sm-6 col-md-3 stat-box">
+              <h2 className="stat-number">10+</h2>
+              <h5 className="stat-title">Years of Experience</h5>
+            </div>
+
+            <div className="col-sm-6 col-md-3 stat-box">
+              <h2 className="stat-number">50+</h2>
+              <h5 className="stat-title">Successful Projects</h5>
+            </div>
+
+            {/* ✅ Newly added stat below */}
+            <div className="col-sm-6 col-md-3 stat-box">
+              <h2 className="stat-number">15+</h2>
+              <h5 className="stat-title">Industry Experts</h5>
+            </div>
           </div>
         </div>
+      </section>
 
-        {/* ✅ Stats Grid Updated to 4 Items */}
-        <div className="row stats-row text-center ">
-          <div className="col-sm-6 col-md-3 stat-box">
-            <h2 className="stat-number">100%</h2>
-            <h5 className="stat-title">Client Satisfaction</h5>
-          </div>
-
-          <div className="col-sm-6 col-md-3 stat-box">
-            <h2 className="stat-number">10+</h2>
-            <h5 className="stat-title">Years of Experience</h5>
-          </div>
-
-          <div className="col-sm-6 col-md-3 stat-box">
-            <h2 className="stat-number">50+</h2>
-            <h5 className="stat-title">Successful Projects</h5>
-          </div>
-
-          {/* ✅ Newly added stat below */}
-          <div className="col-sm-6 col-md-3 stat-box">
-            <h2 className="stat-number">15+</h2>
-            <h5 className="stat-title">Industry Experts</h5>
-          </div>
-        </div>
-      </div>
-</section>
-    
       <div className=" section tech-marquee container">
         <div className="marquee-track">
           <div className="tech-item">
@@ -290,15 +288,13 @@ export default function Home() {
         </div>
       </div>
 
-       {/* ================= SERVICES ================= */}
+      {/* ================= SERVICES ================= */}
       <section className="section services-section">
         <div className="container px-3">
           <div className="row align-items-center">
             <div className="col-12 col-md-6 mb-4 mb-md-0">
               <h6 className="section-label">Our Services</h6>
-              <h2 className="section-title">
-                Make your brand exceptional
-              </h2>
+              <h2 className="section-title">Make your brand exceptional</h2>
 
               <ul className="services-list ps-0">
                 <Link to="/webdevelopment">
@@ -355,165 +351,167 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section className="section"></section>
+      <section className="section"></section>
       <div className="container px-3">
         <h6 className="section-label">Frequentely Asked Questions</h6>
         <h2 className="section-title">Everything you need to stand out</h2>
         <div className="row">
-         <div className="accordion" id="accordionExample">
+          <div className="accordion" id="accordionExample">
+            {/* 1 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                >
+                  What Web Development services do you offer?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  We build responsive, SEO-optimized, and scalable websites
+                  including corporate sites, e-commerce platforms, custom web
+                  apps, and enterprise solutions using modern technologies like
+                  React, Node.js, Laravel, and more.
+                </div>
+              </div>
+            </div>
 
-  {/* 1 */}
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingOne">
-      <button
-        className="accordion-button"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseOne"
-        aria-expanded="true"
-      >
-        What Web Development services do you offer?
-      </button>
-    </h2>
-    <div
-      id="collapseOne"
-      className="accordion-collapse collapse show"
-      data-bs-parent="#accordionExample"
-    >
-      <div className="accordion-body">
-        We build responsive, SEO-optimized, and scalable websites including
-        corporate sites, e-commerce platforms, custom web apps, and enterprise
-        solutions using modern technologies like React, Node.js, Laravel, and more.
-      </div>
-    </div>
-  </div>
+            {/* 2 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  Do you develop mobile applications?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  Yes. We develop high-performance Android and iOS applications,
+                  including cross-platform apps using Flutter and React Native.
+                  Our apps are optimized for speed, security, and scalability.
+                </div>
+              </div>
+            </div>
 
-  {/* 2 */}
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingTwo">
-      <button
-        className="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseTwo"
-      >
-        Do you develop mobile applications?
-      </button>
-    </h2>
-    <div
-      id="collapseTwo"
-      className="accordion-collapse collapse"
-      data-bs-parent="#accordionExample"
-    >
-      <div className="accordion-body">
-        Yes. We develop high-performance Android and iOS applications, including
-        cross-platform apps using Flutter and React Native. Our apps are optimized
-        for speed, security, and scalability.
-      </div>
-    </div>
-  </div>
+            {/* 3 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  What does your UI/UX design process include?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  Our UI/UX design process includes research, wireframing,
+                  prototyping, user journey mapping, and high-fidelity designs
+                  that ensure intuitive and engaging digital experiences.
+                </div>
+              </div>
+            </div>
 
-  {/* 3 */}
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingThree">
-      <button
-        className="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseThree"
-      >
-        What does your UI/UX design process include?
-      </button>
-    </h2>
-    <div
-      id="collapseThree"
-      className="accordion-collapse collapse"
-      data-bs-parent="#accordionExample"
-    >
-      <div className="accordion-body">
-        Our UI/UX design process includes research, wireframing, prototyping,
-        user journey mapping, and high-fidelity designs that ensure intuitive
-        and engaging digital experiences.
-      </div>
-    </div>
-  </div>
+            {/* 4 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFour">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                >
+                  How can Digital Marketing help my business?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                className="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  We provide data-driven digital marketing strategies including
+                  SEO, social media marketing, paid ads, and content marketing
+                  to increase visibility, generate leads, and grow your brand
+                  online.
+                </div>
+              </div>
+            </div>
 
-  {/* 4 */}
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingFour">
-      <button
-        className="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseFour"
-      >
-        How can Digital Marketing help my business?
-      </button>
-    </h2>
-    <div
-      id="collapseFour"
-      className="accordion-collapse collapse"
-      data-bs-parent="#accordionExample"
-    >
-      <div className="accordion-body">
-        We provide data-driven digital marketing strategies including SEO,
-        social media marketing, paid ads, and content marketing to increase
-        visibility, generate leads, and grow your brand online.
-      </div>
-    </div>
-  </div>
+            {/* 5 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFive">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                >
+                  What is AI Integration & Automation?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                className="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  AI Integration allows businesses to automate workflows,
+                  improve customer experiences, and enhance decision-making. We
+                  implement AI-powered tools, automation systems, and
+                  intelligent data solutions tailored to your needs.
+                </div>
+              </div>
+            </div>
 
-  {/* 5 */}
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingFive">
-      <button
-        className="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseFive"
-      >
-        What is AI Integration & Automation?
-      </button>
-    </h2>
-    <div
-      id="collapseFive"
-      className="accordion-collapse collapse"
-      data-bs-parent="#accordionExample"
-    >
-      <div className="accordion-body">
-        AI Integration allows businesses to automate workflows, improve customer
-        experiences, and enhance decision-making. We implement AI-powered tools,
-        automation systems, and intelligent data solutions tailored to your needs.
-      </div>
-    </div>
-  </div>
-
-  {/* 6 */}
-  <div className="accordion-item">
-    <h2 className="accordion-header" id="headingSix">
-      <button
-        className="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseSix"
-      >
-        Do you build Custom AI Chatbots?
-      </button>
-    </h2>
-    <div
-      id="collapseSix"
-      className="accordion-collapse collapse"
-      data-bs-parent="#accordionExample"
-    >
-      <div className="accordion-body">
-        Yes. We build intelligent AI chatbots tailored to your business needs,
-        including customer support bots, sales assistants, and automated helpdesk
-        systems integrated with your website or mobile app.
-      </div>
-    </div>
-  </div>
-
-</div>
+            {/* 6 */}
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingSix">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                >
+                  Do you build Custom AI Chatbots?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                className="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div className="accordion-body">
+                  Yes. We build intelligent AI chatbots tailored to your
+                  business needs, including customer support bots, sales
+                  assistants, and automated helpdesk systems integrated with
+                  your website or mobile app.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

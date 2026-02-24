@@ -1,5 +1,7 @@
 import Images from "../assets/Images/Image";
+import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 export default function CustomAiBots() {
+  useDocumentTitle("Custom AI Bots | CoreBizLabs")
   return (
     <>
       <div className="bg">

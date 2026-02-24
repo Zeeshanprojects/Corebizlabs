@@ -1,6 +1,8 @@
 import Images from "../assets/Images/Image";
+import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function UIUXDesign() {
+  useDocumentTitle("UI / UX Design | CoreBizLabs")
   return (
     <>
       {/* Hero Section */}

@@ -1,5 +1,7 @@
 import Images from "../assets/Images/Image";
+import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 export default function WebDevelopment() {
+  useDocumentTitle("Web Development | CoreBizLabs")
   return (
     <>
       <div className="bg">

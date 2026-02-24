@@ -1,6 +1,8 @@
 import Images from "../assets/Images/Image";
+import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function AIIntegrations() {
+  useDocumentTitle("AI Integration & Automation | CoreBizLabs ")
   return (
     <>
       {/* Hero Section */}
