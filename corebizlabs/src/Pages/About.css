@@ -9,7 +9,7 @@
 
 .value-box {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #d0ff71;
+  border: 1px solid #e2fc7a;
   padding: 25px 20px;
   border-radius: 18px;
   height: 100%;
@@ -19,7 +19,7 @@
 
 .value-box:hover {
   transform: translateY(-10px);
-  border-color: #d0ff71;
+  border-color: #e2fc7a;
   box-shadow: 0 0 18px rgba(208, 255, 113, 0.4);
 }
 
@@ -38,7 +38,7 @@
 .value-title {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #d0ff71;
+  color: #e2fc7a;
   margin-bottom: 8px;
 }
 

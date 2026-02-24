@@ -12,7 +12,7 @@
 
 .contact-card {
   background: #181818;
-    border: 1px solid #d0ff71; 
+    border: 1px solid #e2fc7a; 
     height: 100%;
   padding: 30px 20px;
   border-radius: 15px;
@@ -34,7 +34,7 @@
 }
 
 .contact-card h5 {
-  color: #d0ff71;
+  color: #e2fc7a;
   margin-bottom: 8px;
   font-weight: 600;
 }
