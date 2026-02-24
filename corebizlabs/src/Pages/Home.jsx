@@ -34,7 +34,6 @@ export default function Home() {
                   <br />
                   Ignite your brand and identity.
                 </p>
-                <br/>
                 <button className="quote-btn mt-3 ps-5 pe-5">Get a Quote ↗</button>
               </div>
             </div>
@@ -160,7 +159,6 @@ export default function Home() {
               From concept to execution, our strategy-driven approach helps
               businesses accelerate growth, improve efficiency, and stand out in
               the digital world.
-              <br />
             </p>
             <button className="quote-btn">Get a Quote ↗</button>
           </div>

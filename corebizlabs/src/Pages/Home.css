@@ -48,6 +48,7 @@
 .custom-heading span {
   background: linear-gradient(90deg, #e2fc7a, #e2fc7a);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -208,8 +209,7 @@
   text-transform: uppercase;
   color: #e2fc7a;
   letter-spacing: 2px;
-
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   display: inline-block;
   position: relative;
 }
@@ -224,8 +224,20 @@
 }
 
 /* Big Titles */
+.section-title {
+  font-size: clamp(32px, 5vw, 55px);
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
 
 /* Section description text */
+.section p {
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
 
 /* Modern Button */
 .quote-btn {
@@ -497,7 +509,7 @@
   .stat-box:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
 }
 
 @media (max-width: 767px) {
@@ -520,16 +532,18 @@
 }
 
 @media (max-width: 576px) {
-  .section-title{
+  .section-title {
     font-size: 23px;
 
   }
+
   .service-item {
     font-size: 20px !important;
   }
+
   .hero-section {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-}
+    position: relative;
+    width: 100%;
+    height: 60vh;
+  }
 }
