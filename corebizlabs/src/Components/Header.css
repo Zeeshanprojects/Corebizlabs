@@ -102,7 +102,21 @@
   width: 28px;
   height: 28px;
 }
+.active-link {
+  color: #e2fc7a !important;
+  font-weight: 600;
+}
 
+.nav-link {
+  transition: 0.3s ease;
+}
+
+
+
+.dropdown-item.active-link {
+  background-color: #e2fc7a;
+  color: black !important;
+}
 /* Responsive Design */
 @media (min-width: 992px) and (max-width: 1024px) {
   .navbar-logo {

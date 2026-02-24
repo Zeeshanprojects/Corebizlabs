@@ -1,15 +1,24 @@
 import "./header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Images from "../assets/Images/Image";
 
 export default function Header() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg main-navbar">
       <div className="container-fluid d-flex align-items-center justify-content-between">
+
         {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="#">
+        <NavLink
+          to="/"
+          className="navbar-brand d-flex align-items-center"
+          onClick={scrollToTop}
+        >
           <img className="navbar-logo" src={Images.logo} alt="logo" />
-        </a>
+        </NavLink>
 
         {/* Mobile Toggle Button */}
         <button
@@ -24,112 +33,161 @@ export default function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible Menu + CTA */}
+        {/* Collapsible Menu */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="d-flex flex-column flex-lg-row align-items-center w-100 justify-content-between mt-3 mt-lg-0">
+
             {/* Center Menu */}
             <ul className="navbar-nav glass-menu mb-3 mb-lg-0 mx-auto">
+
+              {/* HOME */}
               <li className="nav-item">
-                <Link
-                  className="nav-link active highlight"
+                <NavLink
                   to="/"
-                  onClick={() => window.scrollTo(0, 0)}
+                  end
+                  onClick={scrollToTop}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active-link" : "nav-link"
+                  }
                 >
                   HOME
-                </Link>
+                </NavLink>
               </li>
+
+              {/* ABOUT */}
               <li className="nav-item">
-                <Link
-                  className="nav-link"
+                <NavLink
                   to="/about"
-                  onClick={() => window.scrollTo(0, 0)}
+                  onClick={scrollToTop}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active-link" : "nav-link"
+                  }
                 >
                   ABOUT US
-                </Link>
+                </NavLink>
               </li>
+
+              {/* SERVICES DROPDOWN */}
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
-                  id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   SERVICES
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  
+
+                <ul className="dropdown-menu">
+
                   <li>
-                    <Link
-                      className="dropdown-item"
+                    <NavLink
                       to="/webdevelopment"
-                      onClick={() => window.scrollTo(0, 0)}
+                      onClick={scrollToTop}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "dropdown-item active-link"
+                          : "dropdown-item"
+                      }
                     >
                       Website Development
-                    </Link>
+                    </NavLink>
                   </li>
+
                   <li>
-                    <Link
-                      className="dropdown-item"
+                    <NavLink
                       to="/appdevelopment"
-                      onClick={() => window.scrollTo(0, 0)}
+                      onClick={scrollToTop}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "dropdown-item active-link"
+                          : "dropdown-item"
+                      }
                     >
                       Application Development
-                    </Link>
+                    </NavLink>
                   </li>
+
                   <li>
-                    <Link
-                      className="dropdown-item"
+                    <NavLink
                       to="/digitalmarketing"
-                      onClick={() => window.scrollTo(0, 0)}
+                      onClick={scrollToTop}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "dropdown-item active-link"
+                          : "dropdown-item"
+                      }
                     >
                       Digital Marketing
-                    </Link>
+                    </NavLink>
                   </li>
+
                   <li>
-                    <Link
-                      className="dropdown-item"
+                    <NavLink
                       to="/uiuxdesign"
-                      onClick={() => window.scrollTo(0, 0)}
+                      onClick={scrollToTop}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "dropdown-item active-link"
+                          : "dropdown-item"
+                      }
                     >
                       UI/UX Design
-                    </Link>
+                    </NavLink>
                   </li>
+
                   <li>
-                    <Link
-                      className="dropdown-item"
+                    <NavLink
                       to="/aiintegration"
-                      onClick={() => window.scrollTo(0, 0)}
+                      onClick={scrollToTop}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "dropdown-item active-link"
+                          : "dropdown-item"
+                      }
                     >
                       AI Integration & Automation
-                    </Link>
+                    </NavLink>
                   </li>
+
                   <li>
-                    <Link
-                      className="dropdown-item"
+                    <NavLink
                       to="/customaibots"
-                      onClick={() => window.scrollTo(0, 0)}
+                      onClick={scrollToTop}
+                      className={({ isActive }) =>
+                        isActive
+                          ? "dropdown-item active-link"
+                          : "dropdown-item"
+                      }
                     >
                       Custom AI Bots
-                    </Link>
+                    </NavLink>
                   </li>
+
                 </ul>
               </li>
 
+              {/* CONTACT */}
               <li className="nav-item">
-                <Link
-                  className="nav-link"
+                <NavLink
                   to="/contact"
-                  onClick={() => window.scrollTo(0, 0)}
+                  onClick={scrollToTop}
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active-link" : "nav-link"
+                  }
                 >
                   CONTACT
-                </Link>
+                </NavLink>
               </li>
+
             </ul>
 
-            {/* CTA Button */}
-            <button className="quote-btn">Get a Quote ↗</button>
+            {/* CTA BUTTON */}
+            <button className="quote-btn">
+              Get a Quote ↗
+            </button>
+
           </div>
         </div>
       </div>
