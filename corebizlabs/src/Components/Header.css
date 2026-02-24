@@ -67,7 +67,7 @@
 }
 
 .dropdown-item:hover {
-  background: #d0ff71 !important;
+  background: #E2FC7A !important;
   color: #000 !important;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .quote-btn:hover {
-  background: #d0ff71;
+  background: #E2FC7A;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(208, 255, 113, 0.4);
 }
