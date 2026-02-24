@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="work-process-section  container  ">
+      <div className="section work-process-section  container  ">
         <div className="row  ">
           <div className="col-12 mt-4">
             <h6 className="section-label">Our Work Process</h6>
@@ -205,7 +205,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="tech-marquee container">
+      <div className=" section tech-marquee container">
         <div className="marquee-track">
           <div className="tech-item">
             <div className="tech-item">
