@@ -106,13 +106,22 @@
 /* Responsive Design */
 @media (min-width:992px)and (max-width:1024px)  {
   .navbar-logo{
-    width: 100px;
+    width: 150px;
   }
  .glass-menu {
-  padding: 8px 12px;
+  padding: 8px 12px !important;
   gap: 2px !important;
 } 
+.nav-link{
+font-size: 10px !important;
+  padding: 4px 4px !important;
 }
+.quote-btn {
+  background: #ffffff;
+  color: #000;
+  padding: 12px 12px !important;
+  font-size: 10px !important;
+}}
 
 @media (min-width: 992px) {
   .main-navbar {
