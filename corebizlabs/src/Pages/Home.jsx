@@ -34,149 +34,144 @@ export default function Home() {
                   <br />
                   Ignite your brand and identity.
                 </p>
-                <br/>
-                <button className="quote-btn mt-3 ps-5 pe-5">Get a Quote ↗</button>
+                <br />
+                <button className="quote-btn mt-3 ps-5 pe-5">
+                  Get a Quote ↗
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div className="section work-process-section  container  ">
-        <div className="row  ">
-          <div className="col-12 mt-4">
-            <h6 className="section-label">Our Work Process</h6>
-            <h2 className="section-title ">
-              We Follow a Strategic & Outcome-Driven Approach
-            </h2>
-          </div>
-        </div>
-
-        <div className="row text-center g-4 ">
-          <div className="col-sm-12 col-md-3">
-            <div className="process-card mt-3">
-              <div className="process-step">01</div>
-              <h4>Research & Analysis</h4>
-              <p>
-                We deeply analyze business requirements to discover
-                opportunities and define the right strategy.
-              </p>
+      {/* ================= WORK PROCESS ================= */}
+      <section className="section work-process-section">
+        <div className="container px-3">
+          <div className="row">
+            <div className="col-12 mb-4">
+              <h6 className="section-label">Our Work Process</h6>
+              <h2 className="section-title">
+                We Follow a Strategic & Outcome-Driven Approach
+              </h2>
             </div>
           </div>
 
-          <div className="col-sm-12 col-md-3">
-            <div className="process-card mt-3">
-              <div className="process-step">02</div>
-              <h4>Planning & Strategy</h4>
-              <p>
-                Clear project roadmap with smart planning to ensure seamless
-                execution and timely delivery.
+          <div className="row g-4">
+            {[
+              {
+                step: "01",
+                title: "Research & Analysis",
+                desc: "We deeply analyze business requirements to discover opportunities and define the right strategy.",
+              },
+              {
+                step: "02",
+                title: "Planning & Strategy",
+                desc: "Clear project roadmap with smart planning to ensure seamless execution and timely delivery.",
+              },
+              {
+                step: "03",
+                title: "Design & Development",
+                desc: "We craft responsive, scalable & high-performance solutions with cutting-edge technology.",
+              },
+              {
+                step: "04",
+                title: "Launch & Support",
+                desc: "We deploy the product with ongoing support to ensure long-term success.",
+              },
+            ].map((item, index) => (
+              <div key={index} className="col-12 col-md-6 col-lg-3">
+                <div className="process-card">
+                  <div className="process-step">{item.step}</div>
+                  <h4>{item.title}</h4>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= ABOUT SECTION ================= */}
+      <section className="section about-section">
+        <div className="container px-3">
+          <div className="row align-items-center">
+            <div className="col-12 col-md-6 mb-4 mb-md-0">
+              <h6 className="section-label">Who We Are</h6>
+              <h2 className="section-title">
+                Your Partner in Digital Transformation
+              </h2>
+              <p className="text-white">
+                We are a forward-thinking digital agency delivering modern tech
+                solutions that elevate brands.
               </p>
+              <button className="quote-btn mt-3">Get a Quote ↗</button>
+            </div>
+
+            <div className="col-12 col-md-6 text-center">
+              <img
+                src={Images.image1}
+                alt="about CoreBiz Labs"
+                className="img-fluid about-img"
+              />
             </div>
           </div>
-
-          <div className="col-sm-12 col-md-3">
-            <div className="process-card mt-3">
-              <div className="process-step">03</div>
-              <h4>Design & Development</h4>
-              <p>
-                We craft responsive, scalable & high-performance solutions with
-                cutting-edge technology.
+        </div>
+      </section>
+      <section className="section why-section">
+        <div className=" container px-3">
+          <div className="row">
+            <div className="col-12 col-lg-12 ps-3 ">
+              <h6 className="section-label">Why Choose Us</h6>
+              <h2 className="section-title">
+                Empowering Businesses Through Innovation
+              </h2>
+              <p className="text-white">
+                We connect brands with their audiences and help individuals
+                transform their ideas into impactful digital solutions. From
+                intuitive websites to immersive digital experiences, we design,
+                develop, and deliver with purpose. Our work is powered by
+                creativity, guided by data, and built on modern technology that
+                scales with your success. Together, we create digital value that
+                drives growth, strengthens your brand presence, and shapes a
+                future full of new possibilities.
               </p>
+
+              <button className="quote-btn ">Get a Quote ↗</button>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="col-sm-12 col-md-3">
-            <div className="process-card mt-3">
-              <div className="process-step">04</div>
-              <h4>Launch & Support</h4>
-              <p>
-                We deploy the product with ongoing support to ensure long-term
-                success and improvements.
+      <section className="section about-accordion-section">
+        <div className="container  px-3">
+          <div className="row align-items-center">
+            {/* Left Side – Text + Image */}
+            <div className="col-12 col-md-6 content-wrapper ps-3 mb-4 mb-md-0">
+              <h6 className="section-label">How We Work</h6>
+              <h2 className="section-title">
+                Transforming Vision <br /> Into Reality
+              </h2>
+              <p className="text-white">
+                At Corebiz Labs, we turn ideas into powerful digital
+                experiences. From concept to execution, our strategy-driven
+                approach helps businesses accelerate growth, improve efficiency,
+                and stand out in the digital world.
               </p>
+              <button className="quote-btn">Get a Quote ↗</button>
             </div>
+            <div className="col-12 col-sm-12 col-lg-6">
+              <img src={Images.image2} alt="image2" className="about-img" />
+            </div>
+            {/* Right Side – Accordion */}
           </div>
         </div>
-      </div>
-
-      <div className="section about-section container ">
-        <div className="row align-items-center ">
-          <div className="col-12 col-md-6 ps-3 mb-4 mb-md-0">
-            <h6 className="section-label">Who We Are</h6>
-            <h2 className="section-title">
-              Your Partner in Digital Transformation
-            </h2>
-            <p className="text-white">
-              We are a forward-thinking digital agency delivering modern tech
-              solutions that elevate brands. From visually stunning websites to
-              scalable enterprise systems—our mission is to turn bold ideas into
-              powerful digital realities.
-            </p>
-           
-            <button className="quote-btn ">Get a Quote ↗</button>
-          </div>
-
-          <div className="col-12 col-md-6 text-end ">
-            <img
-              src={Images.image1}
-              alt="about CoreBiz Labs"
-              className="about-img"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="section why-section container">
-        <div className="row">
-          <div className="col-12 col-lg-12 ps-3 ">
-            <h6 className="section-label">Why Choose Us</h6>
-            <h2 className="section-title">
-              Empowering Businesses Through Innovation
-            </h2>
-            <p className="text-white">
-              We connect brands with their audiences and help individuals
-              transform their ideas into impactful digital solutions. From
-              intuitive websites to immersive digital experiences, we design,
-              develop, and deliver with purpose. Our work is powered by
-              creativity, guided by data, and built on modern technology that
-              scales with your success. Together, we create digital value that
-              drives growth, strengthens your brand presence, and shapes a
-              future full of new possibilities.
-            </p>
-
-            <button className="quote-btn ">Get a Quote ↗</button>
-          </div>
-        </div>
-      </div>
-
-      <div className="section container about-accordion-section">
-        <div className="row align-items-center">
-          {/* Left Side – Text + Image */}
-          <div className="col-12 col-md-6 content-wrapper ps-3 mb-4 mb-md-0">
-            <h6 className="section-label">How We Work</h6>
-            <h2 className="section-title">
-              Transforming Vision <br /> Into Reality
-            </h2>
-            <p className="text-white">
-              At Corebiz Labs, we turn ideas into powerful digital experiences.
-              From concept to execution, our strategy-driven approach helps
-              businesses accelerate growth, improve efficiency, and stand out in
-              the digital world.
-            </p>
-            <button className="quote-btn">Get a Quote ↗</button>
-          </div>
-          <div className="col-12 col-sm-12 col-lg-6">
-            <img src={Images.image2} alt="image2" className="about-img" />
-          </div>
-          {/* Right Side – Accordion */}
-        </div>
-      </div>
-
-      <div className="section stats-section container ">
+      </section>
+<section className="section stats-section">
+    <div className=" container px-3">
         <div className="row">
           <div className="col-12 ps-3">
             <h6 className="section-label">Our Achievements</h6>
             <h2 className="section-title">
-              Driving Measurable Success Through Innovation 
+              Driving Measurable Success Through Innovation
             </h2>
           </div>
         </div>
@@ -205,6 +200,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+</section>
+    
       <div className=" section tech-marquee container">
         <div className="marquee-track">
           <div className="tech-item">
@@ -293,150 +290,230 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ✅ Services Section */}
-      <div className="section services-section container  ">
-        <div className="row align-items-center">
-          {" "}
-          {/* ✅ vertical center alignment */}
-          <div className="col-sm-12 col-md-6 ">
-            <h6 className="section-label">Our Services</h6>
-            <h2 className="section-title">Make your brand exceptional</h2>
+       {/* ================= SERVICES ================= */}
+      <section className="section services-section">
+        <div className="container px-3">
+          <div className="row align-items-center">
+            <div className="col-12 col-md-6 mb-4 mb-md-0">
+              <h6 className="section-label">Our Services</h6>
+              <h2 className="section-title">
+                Make your brand exceptional
+              </h2>
 
-            <ul className="services-list ps-1">
-              <Link to="/webdevelopment">
-                {" "}
-                <li className="service-item">
-                  Website Development
-                  <span class="arrow-circle">↗</span>
-                </li>
-              </Link>
-              <Link to="/appdevelopment">
-                <li className="service-item">
-                  Mobile App Development
-                  <span class="arrow-circle">↗</span>
-                </li>
-              </Link>
-              <Link to="/digitalmarketing">
-                <li className="service-item">
-                  Digital Marketing
-                  <span class="arrow-circle">↗</span>
-                </li>
-              </Link>
-              <Link to="/uiuxdesign">
-                <li className="service-item">
-                  UI / UX Design
-                  <span class="arrow-circle">↗</span>
-                </li>
-              </Link>
-              <Link to="/aiintegration">
-                <li className="service-item">
-                  AI Integration & Automation
-                  <span class="arrow-circle">↗</span>
-                </li>
-              </Link>
-              <Link to="/customaibots">
-                <li className="service-item">
-                  Custom AI Bots
-                  <span class="arrow-circle">↗</span>
-                </li>
-              </Link>
-            </ul>
-          </div>
-          <div className="col-sm-12 col-md-6 image-col">
-            {" "}
-            {/* ✅ added class */}
-            <img src={Images.image3} alt="service" className="service-img" />
+              <ul className="services-list ps-0">
+                <Link to="/webdevelopment">
+                  <li className="service-item">
+                    Website Development
+                    <span className="arrow-circle">↗</span>
+                  </li>
+                </Link>
+
+                <Link to="/appdevelopment">
+                  <li className="service-item">
+                    Mobile App Development
+                    <span className="arrow-circle">↗</span>
+                  </li>
+                </Link>
+
+                <Link to="/digitalmarketing">
+                  <li className="service-item">
+                    Digital Marketing
+                    <span className="arrow-circle">↗</span>
+                  </li>
+                </Link>
+
+                <Link to="/uiuxdesign">
+                  <li className="service-item">
+                    UI / UX Design
+                    <span className="arrow-circle">↗</span>
+                  </li>
+                </Link>
+
+                <Link to="/aiintegration">
+                  <li className="service-item">
+                    AI Integration & Automation
+                    <span className="arrow-circle">↗</span>
+                  </li>
+                </Link>
+
+                <Link to="/customaibots">
+                  <li className="service-item">
+                    Custom AI Bots
+                    <span className="arrow-circle">↗</span>
+                  </li>
+                </Link>
+              </ul>
+            </div>
+
+            <div className="col-12 col-md-6 text-center">
+              <img
+                src={Images.image3}
+                alt="service"
+                className="img-fluid service-img"
+              />
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="container">
+      </section>
+<section className="section"></section>
+      <div className="container px-3">
         <h6 className="section-label">Frequentely Asked Questions</h6>
         <h2 className="section-title">Everything you need to stand out</h2>
         <div className="row">
-          <div className="accordion" id="accordionExample">
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingOne">
-                <button
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  What Kind of services do you offer?
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                className="accordion-collapse collapse show"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  We specialize in full-stack web development, native and hybrid
-                  mobile app development, UI/UX design, and advanced AI
-                  integrations, including automation and custom AI bots. We
-                  handle projects from concept to deployment.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingTwo">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  What is you Development Process
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  Our process is collaborative and agile. We start with a
-                  deep-dive "Discovery" phase to understand your goals, followed
-                  by "Design & Develop" where we build and iterate, and finally
-                  "Deploy & Support" to launch your product and ensure its
-                  success.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header" id="headingThree">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Where are you located
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                className="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body">
-                  We are based in beautiful Laguna Beach, California, but we
-                  serve clients globally. We are fully equipped for remote
-                  collaboration.
-                </div>
-              </div>
-            </div>
-          </div>
+         <div className="accordion" id="accordionExample">
+
+  {/* 1 */}
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingOne">
+      <button
+        className="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+        aria-expanded="true"
+      >
+        What Web Development services do you offer?
+      </button>
+    </h2>
+    <div
+      id="collapseOne"
+      className="accordion-collapse collapse show"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+        We build responsive, SEO-optimized, and scalable websites including
+        corporate sites, e-commerce platforms, custom web apps, and enterprise
+        solutions using modern technologies like React, Node.js, Laravel, and more.
+      </div>
+    </div>
+  </div>
+
+  {/* 2 */}
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingTwo">
+      <button
+        className="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+      >
+        Do you develop mobile applications?
+      </button>
+    </h2>
+    <div
+      id="collapseTwo"
+      className="accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+        Yes. We develop high-performance Android and iOS applications, including
+        cross-platform apps using Flutter and React Native. Our apps are optimized
+        for speed, security, and scalability.
+      </div>
+    </div>
+  </div>
+
+  {/* 3 */}
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingThree">
+      <button
+        className="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+      >
+        What does your UI/UX design process include?
+      </button>
+    </h2>
+    <div
+      id="collapseThree"
+      className="accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+        Our UI/UX design process includes research, wireframing, prototyping,
+        user journey mapping, and high-fidelity designs that ensure intuitive
+        and engaging digital experiences.
+      </div>
+    </div>
+  </div>
+
+  {/* 4 */}
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingFour">
+      <button
+        className="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseFour"
+      >
+        How can Digital Marketing help my business?
+      </button>
+    </h2>
+    <div
+      id="collapseFour"
+      className="accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+        We provide data-driven digital marketing strategies including SEO,
+        social media marketing, paid ads, and content marketing to increase
+        visibility, generate leads, and grow your brand online.
+      </div>
+    </div>
+  </div>
+
+  {/* 5 */}
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingFive">
+      <button
+        className="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseFive"
+      >
+        What is AI Integration & Automation?
+      </button>
+    </h2>
+    <div
+      id="collapseFive"
+      className="accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+        AI Integration allows businesses to automate workflows, improve customer
+        experiences, and enhance decision-making. We implement AI-powered tools,
+        automation systems, and intelligent data solutions tailored to your needs.
+      </div>
+    </div>
+  </div>
+
+  {/* 6 */}
+  <div className="accordion-item">
+    <h2 className="accordion-header" id="headingSix">
+      <button
+        className="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseSix"
+      >
+        Do you build Custom AI Chatbots?
+      </button>
+    </h2>
+    <div
+      id="collapseSix"
+      className="accordion-collapse collapse"
+      data-bs-parent="#accordionExample"
+    >
+      <div className="accordion-body">
+        Yes. We build intelligent AI chatbots tailored to your business needs,
+        including customer support bots, sales assistants, and automated helpdesk
+        systems integrated with your website or mobile app.
+      </div>
+    </div>
+  </div>
+
+</div>
         </div>
       </div>
     </>
