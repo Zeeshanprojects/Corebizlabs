@@ -321,7 +321,7 @@ export default function Home() {
                   <span class="arrow-circle">↗</span>
                 </li>
               </Link>
-              <Link tp="/uiuxdesign">
+              <Link to="/uiuxdesign">
                 <li className="service-item">
                   UI / UX Design
                   <span class="arrow-circle">↗</span>

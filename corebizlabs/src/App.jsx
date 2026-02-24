@@ -8,6 +8,7 @@ import Preloader from "./Components/Preloader";
 
 // ✅ Home stays normal (no code splitting)
 import Home from "./Pages/Home";
+import ScrollToTop from "./Components/ScrollToTop";
 
 // ✅ Lazy loaded pages
 const About = lazy(() => import("./Pages/About"));
@@ -36,6 +37,7 @@ function App() {
         <Preloader />
       ) : (
         <BrowserRouter>
+        <ScrollToTop/>
           <Header />
 
           {/* Suspense handles lazy loading */}
