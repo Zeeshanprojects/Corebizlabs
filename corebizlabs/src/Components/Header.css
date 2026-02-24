@@ -19,7 +19,6 @@
   transform: scale(1.05);
 }
 
-/* Glass Menu */
 .glass-menu {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
@@ -29,7 +28,7 @@
   padding: 8px 12px;
   gap: 10px;
   transition: all 0.3s ease;
-}
+} 
 
 .nav-link {
   color: #fff !important;
@@ -105,8 +104,16 @@
 }
 
 /* Responsive Design */
+@media (min-width:992px)and (max-width:1024px)  {
+  .navbar-logo{
+    width: 100px;
+  }
+ .glass-menu {
+  padding: 8px 12px;
+  gap: 2px !important;
+} 
+}
 
-/* Large Screens */
 @media (min-width: 992px) {
   .main-navbar {
     padding: 12px 40px;
