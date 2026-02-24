@@ -302,36 +302,43 @@ export default function Home() {
             <h2 className="section-title">Make your brand exceptional</h2>
 
             <ul className="services-list ps-1">
-              <Link to="/"> <li className="service-item">
-                Website Development
-                <span class="arrow-circle">↗</span>
-              </li></Link>
-             <Link>
-              <li className="service-item">
-                Mobile App Development
-                <span class="arrow-circle">↗</span>
-              </li></Link>
-             <Link>
-              <li className="service-item">
-                Digital Marketing
-                <span class="arrow-circle">↗</span>
-              </li></Link>
-             <Link>
-              <li className="service-item">
-                UI / UX Design
-                <span class="arrow-circle">↗</span>
-              </li></Link>
-             <Link>
-              <li className="service-item">
-                AI Integration & Automation
-                <span class="arrow-circle">↗</span>
-              </li></Link>
-             <Link>
-              <li className="service-item">
-                Custom AI Bots
-                <span class="arrow-circle">↗</span>
-              </li></Link>
-             
+              <Link to="/webdevelopment">
+                {" "}
+                <li className="service-item">
+                  Website Development
+                  <span class="arrow-circle">↗</span>
+                </li>
+              </Link>
+              <Link to="/appdevelopment">
+                <li className="service-item">
+                  Mobile App Development
+                  <span class="arrow-circle">↗</span>
+                </li>
+              </Link>
+              <Link to="/digitalmarketing">
+                <li className="service-item">
+                  Digital Marketing
+                  <span class="arrow-circle">↗</span>
+                </li>
+              </Link>
+              <Link tp="/uiuxdesign">
+                <li className="service-item">
+                  UI / UX Design
+                  <span class="arrow-circle">↗</span>
+                </li>
+              </Link>
+              <Link to="/aiintegration">
+                <li className="service-item">
+                  AI Integration & Automation
+                  <span class="arrow-circle">↗</span>
+                </li>
+              </Link>
+              <Link to="/customaibots">
+                <li className="service-item">
+                  Custom AI Bots
+                  <span class="arrow-circle">↗</span>
+                </li>
+              </Link>
             </ul>
           </div>
           <div className="col-sm-12 col-md-6 image-col">
