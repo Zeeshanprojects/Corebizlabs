@@ -176,7 +176,7 @@ export default function Home() {
           <div className="col-12 ps-3">
             <h6 className="section-label">Our Achievements</h6>
             <h2 className="section-title">
-              Driving measurable success through innovation and customer trust
+              Driving Measurable Success Through Innovation 
             </h2>
           </div>
         </div>
