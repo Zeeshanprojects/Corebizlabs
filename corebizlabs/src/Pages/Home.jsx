@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import Images from "../assets/Images/Image";
 import "./Home.css";
 export default function Home() {
@@ -10,8 +10,15 @@ export default function Home() {
   return (
     <>
       <div className="hero-section">
-        <video className="bg-video" autoPlay loop muted playsInline poster="/poster.webp">
-          <source src="/background-video.mp4" type="video/mp4"  />
+        <video
+          className="bg-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/poster.webp"
+        >
+          <source src="/background-video.mp4" type="video/mp4" />
         </video>
 
         <div className="content">
@@ -33,8 +40,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-   
 
       <div className="work-process-section  container mt-5 ">
         <div className="row  ">
@@ -100,7 +105,7 @@ export default function Home() {
             <h2 className="section-title">
               Your Partner in Digital Transformation
             </h2>
-            <p className="section-text">
+            <p className="text-white">
               We are a forward-thinking digital agency delivering modern tech
               solutions that elevate brands. From visually stunning websites to
               scalable enterprise systems—our mission is to turn bold ideas into
@@ -149,7 +154,7 @@ export default function Home() {
             <h2 className="section-title">
               Transforming Vision <br /> Into Reality
             </h2>
-            <p className="section-text">
+            <p className="text-white">
               At Corebiz Labs, we turn ideas into powerful digital experiences.
               From concept to execution, our strategy-driven approach helps
               businesses accelerate growth, improve efficiency, and stand out in
@@ -292,35 +297,41 @@ export default function Home() {
         <div className="row align-items-center">
           {" "}
           {/* ✅ vertical center alignment */}
-          <div className="col-sm-12 col-md-6 " >
+          <div className="col-sm-12 col-md-6 ">
             <h6 className="section-label">Our Services</h6>
             <h2 className="section-title">Make your brand exceptional</h2>
 
             <ul className="services-list ps-1">
-              <li className="service-item">
-                Full Stack Web Development
+              <Link to="/"> <li className="service-item">
+                Website Development
                 <span class="arrow-circle">↗</span>
-              </li>
+              </li></Link>
+             <Link>
               <li className="service-item">
                 Mobile App Development
                 <span class="arrow-circle">↗</span>
-              </li>
+              </li></Link>
+             <Link>
               <li className="service-item">
                 Digital Marketing
                 <span class="arrow-circle">↗</span>
-              </li>
+              </li></Link>
+             <Link>
               <li className="service-item">
                 UI / UX Design
                 <span class="arrow-circle">↗</span>
-              </li>
+              </li></Link>
+             <Link>
               <li className="service-item">
                 AI Integration & Automation
                 <span class="arrow-circle">↗</span>
-              </li>
+              </li></Link>
+             <Link>
               <li className="service-item">
                 Custom AI Bots
                 <span class="arrow-circle">↗</span>
-              </li>
+              </li></Link>
+             
             </ul>
           </div>
           <div className="col-sm-12 col-md-6 image-col">

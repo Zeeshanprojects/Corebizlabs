@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   margin: 0 !important;
   padding: 0 !important;
   display: flex;
@@ -46,7 +46,7 @@
 }
 
 .custom-heading span {
-  background: linear-gradient(90deg, #d0ff71, #d0ff71);
+  background: linear-gradient(90deg, #e2fc7a, #e2fc7a);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -102,7 +102,7 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #d0ff71 !important;
+  color: #e2fc7a !important;
 }
 
 .portfolio-card {
@@ -129,7 +129,7 @@
   background-image: none;
   width: 30px;
   height: 3px;
-  background-color: #d0ff71;
+  background-color: #e2fc7a;
   display: block;
   position: relative;
 }
@@ -139,7 +139,7 @@
   content: "";
   width: 30px;
   height: 3px;
-  background-color: #d0ff71;
+  background-color: #e2fc7a;
   position: absolute;
   left: 0;
   transition: 0.3s;
@@ -194,7 +194,7 @@
 .process-step {
   font-size: 50px;
   font-weight: 700;
-  color: #d0ff71;
+  color: #e2fc7a;
   margin-bottom: 12px;
 }
 
@@ -206,7 +206,7 @@
 .section-label {
   font-size: 1rem;
   text-transform: uppercase;
-  color: #d0ff71;
+  color: #e2fc7a;
   letter-spacing: 2px;
 
   margin-bottom: 8px;
@@ -218,23 +218,21 @@
   content: "";
   width: 45px;
   height: 2px;
-  background: #d0ff71;
+  background: #e2fc7a;
   display: block;
   margin-top: 6px;
 }
 
 /* Big Titles */
 
-
 /* Section description text */
-
 
 /* Modern Button */
 .quote-btn {
   padding: 12px 28px;
   background: transparent;
-  border: 2px solid #d0ff71;
-  color: #d0ff71;
+  border: 2px solid #e2fc7a;
+  color: #e2fc7a;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -244,7 +242,7 @@
 }
 
 .quote-btn:hover {
-  background: #d0ff71;
+  background: #e2fc7a;
   color: #000;
 }
 
@@ -281,7 +279,7 @@
 }
 
 .tech-item:hover {
-  color: #d0ff71;
+  color: #e2fc7a;
   text-shadow: 0px 0px 15px rgba(161, 255, 35, 0.7);
   transform: translateY(-4px);
 }
@@ -344,7 +342,7 @@
 }
 
 .service-item:hover {
-  color: #d0ff71 !important;
+  color: #e2fc7a !important;
 }
 
 .arrow-circle {
@@ -361,12 +359,12 @@
 
 /* Hover Effect */
 .service-item:hover {
-  color: #d0ff71;
+  color: #e2fc7a;
 }
 
 .service-item:hover .arrow-circle {
-  border-color: #d0ff71;
-  color: #d0ff71;
+  border-color: #e2fc7a;
+  color: #e2fc7a;
   transform: translateX(8px);
 }
 
@@ -400,7 +398,7 @@
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #d0ff71 !important;
+  color: #e2fc7a !important;
 }
 
 .stat-title {
@@ -444,13 +442,13 @@
 
 /* Remove default background when expanded */
 .accordion-button:not(.collapsed) {
-  color: #d0ff71;
+  color: #e2fc7a;
   background: transparent;
 }
 
 /* Hover Effect */
 .accordion-button:hover {
-  color: #d0ff71;
+  color: #e2fc7a;
   transform: translateX(8px);
 }
 
@@ -467,7 +465,7 @@
 /* Rotate + glow when active */
 .accordion-button:not(.collapsed)::after {
   transform: rotate(45deg);
-  color: #d0ff71;
+  color: #e2fc7a;
 }
 
 /* Accordion Body */
@@ -481,7 +479,7 @@
 /* Active state border highlight */
 .accordion-item.active,
 .accordion-item:has(.show) {
-  border-bottom: 1px solid #d0ff71;
+  border-bottom: 1px solid #e2fc7a;
 }
 
 /* Mobile Responsive */

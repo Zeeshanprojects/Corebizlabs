@@ -1,5 +1,5 @@
 const Images = {
-  logo: new URL("CB-LOGO.png", import.meta.url).href,
+  logo: new URL("Corebizlabslogo.png", import.meta.url).href,
   image1: new URL("recom-thumb.webp", import.meta.url).href,
   image2: new URL("image2.webp", import.meta.url).href,
   image3: new URL("./image3.webp", import.meta.url).href,

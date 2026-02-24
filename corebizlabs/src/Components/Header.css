@@ -10,7 +10,7 @@
 
 /* Logo */
 .navbar-logo {
-  width: 110px;
+  width: 200px;
   height: auto;
   transition: transform 0.3s ease;
 }
@@ -43,7 +43,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-  background: #d0ff71 !important;
+  background: #E2FC7A !important;
   color: #000 !important;
 }
 .dropdown-menu {
@@ -54,7 +54,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 3px 12px;
   transition: all 0.3s ease;
-  font-size: 12px;
+
   max-height: 400px; /* Limit height to prevent going below screen */
   overflow-y: auto; /* Enable scroll if items exceed max-height */
 }
