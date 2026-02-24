@@ -34,7 +34,8 @@ export default function Home() {
                   <br />
                   Ignite your brand and identity.
                 </p>
-                <button className="quote-btn mt-3">Get a Quote ↗</button>
+                <br/>
+                <button className="quote-btn mt-3 ps-5 pe-5">Get a Quote ↗</button>
               </div>
             </div>
           </div>
