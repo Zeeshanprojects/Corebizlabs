@@ -1,12 +1,11 @@
-import React from "react";
-import Images from "../assets/Images/Image";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
   return (
     <>
       <hr className="underline" />
-      <div className="container p-0">
+      <div className="container-fluid p-0">
         {/* Footer */}
         <footer
           className="text-center text-lg-start text-white"
@@ -55,29 +54,45 @@ export default function Footer() {
                     }}
                   />
                   <p>
-                    <a href="#!" className="text-white">
+                    <Link to="/about" className="text-white">
                       About Us
-                    </a>
+                    </Link>
                   </p>
+                 
                   <p>
-                    <a href="#!" className="text-white">
-                      Service
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-white">
+                    <Link to="/contact" className="text-white">
                       Contact Us
-                    </a>
+                    </Link>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Privacy Policy
-                    </a>
+                    <Link to="#!" className="text-white">
+                      Website Development
+                    </Link>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Terms & Conditions
-                    </a>
+                    <Link to="#!" className="text-white">
+                    App Development
+                    </Link>
+                  </p>
+                     <p>
+                    <Link to="#!" className="text-white">
+                    Digital Marketing
+                    </Link>
+                  </p>
+                  <p>
+                    <Link to="#!" className="text-white">
+                UI / UX Designing
+                    </Link>
+                  </p>
+                   <p>
+                    <Link to="#!" className="text-white">
+            AI Integration & Automation
+                    </Link>
+                  </p>
+                        <p>
+                    <Link to="#!" className="text-white">
+          Custom AI Bots
+                    </Link>
                   </p>
                 </div>
 
@@ -93,17 +108,17 @@ export default function Footer() {
                     }}
                   />
                   <p>
-                    <a href="#!" className="text-white">
+                    <a to="#!" className="text-white">
                       +1 (949) 283-9554 A
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
+                    <a to="#!" className="text-white">
                       david@corebizlabs.com
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
+                    <a to="#!" className="text-white">
                       Laguna Beach
                     </a>
                   </p>
@@ -117,7 +132,7 @@ export default function Footer() {
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
             © 2025 Copyright:
-            <a className="text-white" href="https://mdbootstrap.com/">
+            <a className="text-white" to="https://mdbootstrap.com/">
               CorBizLabs.com
             </a>
           </div>
