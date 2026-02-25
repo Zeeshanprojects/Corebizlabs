@@ -110,9 +110,6 @@
 .nav-link {
   transition: 0.3s ease;
 }
-
-
-
 .dropdown-item.active-link {
   background-color: #e2fc7a;
   color: black !important;
