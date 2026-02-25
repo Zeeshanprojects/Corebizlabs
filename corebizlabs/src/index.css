@@ -32,13 +32,12 @@ body {
   padding: 80px 0;
   background-color: transparent;
 }
-
 .section-title {
-  font-size: clamp(32px, 3vw, 58px);
+  font-size: clamp(24px, 2.2vw, 48px) !important;
   font-weight: 700;
   color: #E2FC7A !important;
   line-height: 1.2;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .story-text {

@@ -1,10 +1,18 @@
 import "./header.css";
 import { NavLink } from "react-router-dom";
+import { Collapse } from "bootstrap";
+
 import Images from "../assets/Images/Image";
 
 export default function Header() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
+
+    const navbar = document.getElementById("navbarNav");
+    if (navbar && navbar.classList.contains("show")) {
+      const bsCollapse = Collapse.getInstance(navbar) || new Collapse(navbar);
+      bsCollapse.hide();
+    }
   };
 
   return (
@@ -29,6 +37,7 @@ export default function Header() {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+        
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -168,25 +177,15 @@ export default function Header() {
                 </ul>
               </li>
 
-              {/* CONTACT */}
-              <li className="nav-item">
-                <NavLink
-                  to="/contact"
-                  onClick={scrollToTop}
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active-link" : "nav-link"
-                  }
-                >
-                  CONTACT
-                </NavLink>
-              </li>
 
             </ul>
 
             {/* CTA BUTTON */}
-            <button className="quote-btn">
-              Get a Quote ↗
-            </button>
+            <NavLink to="/contact">
+               <button className="quote-btn">
+         Contact
+            </button></NavLink>
+         
 
           </div>
         </div>
