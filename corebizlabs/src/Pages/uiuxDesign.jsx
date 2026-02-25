@@ -1,4 +1,4 @@
-import Images from "../assets/Images/Image";
+import {Layout } from "lucide-react"
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function UIUXDesign() {
@@ -38,13 +38,12 @@ export default function UIUXDesign() {
             </p>
           </div>
 
-          <div className="col-md-6 text-center">
-            <img
-              src={Images.image4}
-              alt="UI UX Design"
-              className="about-img"
-            />
-          </div>
+        <div className="col-md-6 text-center">
+  <div className="background">
+    <Layout size={80} strokeWidth={2.5} />
+
+  </div>
+</div>
         </div>
       </div>
     </>
