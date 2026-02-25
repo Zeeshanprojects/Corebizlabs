@@ -1,4 +1,4 @@
-import {Network  } from "lucide-react"
+import {Network} from "lucide-react"
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function AIIntegrations() {
