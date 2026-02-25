@@ -1,4 +1,4 @@
-import Images from "../assets/Images/Image";
+import {Network  } from "lucide-react"
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function AIIntegrations() {
@@ -39,13 +39,12 @@ export default function AIIntegrations() {
             </p>
           </div>
 
-          <div className="col-md-6 text-center">
-            <img
-              src={Images.image4}
-              alt="AI Integrations"
-              className="about-img"
-            />
-          </div>
+         <div className="col-md-6 text-center">
+  <div className="background">
+    <Network  size={100} strokeWidth={2.5} />
+
+  </div>
+</div>
         </div>
       </div>
     </>

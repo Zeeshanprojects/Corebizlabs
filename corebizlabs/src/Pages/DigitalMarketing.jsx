@@ -40,7 +40,7 @@ export default function DigitalMarketing() {
 
       <div className="col-md-6 text-center">
   <div className="background">
-    <Megaphone  size={80} strokeWidth={2.5} />
+    <Megaphone  size={100} strokeWidth={2.5} />
     
   </div>
 </div>

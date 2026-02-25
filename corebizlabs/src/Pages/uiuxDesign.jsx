@@ -40,7 +40,7 @@ export default function UIUXDesign() {
 
         <div className="col-md-6 text-center">
   <div className="background">
-    <Layout size={80} strokeWidth={2.5} />
+    <Layout size={100} strokeWidth={2.5} />
 
   </div>
 </div>

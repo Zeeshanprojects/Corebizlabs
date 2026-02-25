@@ -40,7 +40,7 @@ export default function AppDevelopment() {
 
           <div className="col-md-6 text-center">
   <div className="background">
-    <Smartphone size={80} strokeWidth={2.5} />
+    <Smartphone size={100} strokeWidth={2.5} />
 
   </div>
 </div>

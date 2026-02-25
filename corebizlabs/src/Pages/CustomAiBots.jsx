@@ -1,4 +1,4 @@
-import Images from "../assets/Images/Image";
+import {Bot} from "lucid-react"
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 export default function CustomAiBots() {
   useDocumentTitle("Custom AI Bots | CoreBizLabs")
@@ -37,9 +37,12 @@ export default function CustomAiBots() {
             </p>
           </div>
 
-          <div className="col-md-6 text-center">
-            <img src={Images.image4} alt="about" className="about-img" />
-          </div>
+        <div className="col-md-6 text-center">
+  <div className="background">
+    <Bot size={100} strokeWidth={2.5} />
+
+  </div>
+</div>
         </div>
       </div>
     </>

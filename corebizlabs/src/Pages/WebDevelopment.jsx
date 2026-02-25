@@ -38,7 +38,7 @@ export default function WebDevelopment() {
 
 <div className="col-md-6 text-center">
   <div className="background">
-    <Code size={80} strokeWidth={2.5} />
+    <Code size={100} strokeWidth={2.5} />
 
   </div>
 </div>
