@@ -1,4 +1,4 @@
-import {Bot } from "lucid-react"
+import {Bot } from "lucide-react"
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 export default function CustomAiBots() {
   useDocumentTitle("Custom AI Bots | CoreBizLabs")
