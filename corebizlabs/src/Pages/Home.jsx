@@ -182,7 +182,7 @@ export default function Home() {
             </div>
 
             <div className="col-sm-6 col-md-3 stat-box">
-              <h2 className="stat-number">10+</h2>
+              <h2 className="stat-number">5+</h2>
               <h5 className="stat-title">Years of Experience</h5>
             </div>
 

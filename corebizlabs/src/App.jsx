@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import { useState, useEffect, Suspense } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -9,17 +9,15 @@ import Preloader from "./Components/Preloader";
 // ✅ Home stays normal (no code splitting)
 import Home from "./Pages/Home";
 import ScrollToTop from "./Components/ScrollToTop";
-
-// ✅ Lazy loaded pages
-const About = lazy(() => import("./Pages/About"));
-const Contact = lazy(() => import("./Pages/Contact"));
-const WebDevelopment = lazy(() => import("./Pages/WebDevelopment"));
-const AppDevelopment = lazy(() => import("./Pages/AppDevelopment"));
-const DigitalMarketing = lazy(() => import("./Pages/DigitalMarketing"));
-const UiuxDesign = lazy(() => import("./Pages/uiuxDesign"));
-const AiIntegration = lazy(() => import("./Pages/AiIntegration"));
-const CustomAiBots = lazy(() => import("./Pages/CustomAiBots"));
-
+import About from "./Pages/About"
+import Contact from "./Pages/Contact"
+import WebDevelopment from "./Pages/WebDevelopment"
+import AppDevelopment from "./Pages/AppDevelopment"
+import DigitalMarketing from "./Pages/DigitalMarketing"
+import UiuxDesign from "./Pages/uiuxDesign"
+import AiIntegration from "./Pages/AiIntegration"
+import CustomAiBots from "./Pages/CustomAiBots"
+ 
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -37,23 +35,20 @@ function App() {
         <Preloader />
       ) : (
         <BrowserRouter>
-        <ScrollToTop/>
+          <ScrollToTop />
           <Header />
 
-          {/* Suspense handles lazy loading */}
-          <Suspense fallback={<Preloader />}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/webdevelopment" element={<WebDevelopment />} />
-              <Route path="/appdevelopment" element={<AppDevelopment />} />
-              <Route path="/digitalmarketing" element={<DigitalMarketing />} />
-              <Route path="/uiuxdesign" element={<UiuxDesign />} />
-              <Route path="/aiintegration" element={<AiIntegration />} />
-              <Route path="/customaibots" element={<CustomAiBots />} />
-            </Routes>
-          </Suspense>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About/>}/>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/webdevelopment" element={<WebDevelopment />} />
+            <Route path="/appdevelopment" element={<AppDevelopment />} />
+            <Route path="/digitalmarketing" element={<DigitalMarketing />} />
+            <Route path="/uiuxdesign" element={<UiuxDesign />} />
+            <Route path="/aiintegration" element={<AiIntegration />} />
+            <Route path="/customaibots" element={<CustomAiBots />} />
+          </Routes>
 
           <Footer />
         </BrowserRouter>
