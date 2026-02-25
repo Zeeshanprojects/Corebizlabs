@@ -1,4 +1,4 @@
-import Images from "../assets/Images/Image";
+import {Megaphone  } from "lucide-react"
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function DigitalMarketing() {
@@ -38,13 +38,12 @@ export default function DigitalMarketing() {
             </p>
           </div>
 
-          <div className="col-md-6 text-center">
-            <img
-              src={Images.image4}
-              alt="Digital Marketing"
-              className="about-img"
-            />
-          </div>
+      <div className="col-md-6 text-center">
+  <div className="background">
+    <Megaphone  size={80} strokeWidth={2.5} />
+    
+  </div>
+</div>
         </div>
       </div>
     </>

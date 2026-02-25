@@ -39,7 +39,7 @@ export default function WebDevelopment() {
 <div className="col-md-6 text-center">
   <div className="background">
     <Code size={80} strokeWidth={2.5} />
-    <h4 className="mt-3">Web Development</h4>
+
   </div>
 </div>
         </div>
