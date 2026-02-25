@@ -1,4 +1,4 @@
-import Images from "../assets/Images/Image";
+import {Smartphone } from "lucide-react"
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function AppDevelopment() {
@@ -39,8 +39,11 @@ export default function AppDevelopment() {
           </div>
 
           <div className="col-md-6 text-center">
-            <img src={Images.image4} alt="about" className="about-img" />
-          </div>
+  <div className="background">
+    <Smartphone size={80} strokeWidth={2.5} />
+    <h4 className="mt-3">Web Development</h4>
+  </div>
+</div>
         </div>
       </div>
     </>
