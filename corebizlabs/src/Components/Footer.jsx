@@ -98,8 +98,8 @@ export default function Footer() {
                       AI Integration & Automation
                     </Link>
                   </p>
-                  <p className="footer-list">
-                    <Link to="/customaibots" className="text-white">
+                  <p>
+                    <Link to="/customaibots" className="footer-list">
                       Custom AI Bots
                     </Link>
                   </p>
