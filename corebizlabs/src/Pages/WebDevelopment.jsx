@@ -10,7 +10,7 @@ export default function WebDevelopment() {
         </div>
       </div>
       {/* ✅ Our Story Section */}
-      <div className="our-story-section container py-5">
+      <div className="our-story-section container py-5" data-aos="fade-up">
         <div className="row align-items-center">
           <div className="col-md-6">
             <h2 className="section-title">Website Development</h2>

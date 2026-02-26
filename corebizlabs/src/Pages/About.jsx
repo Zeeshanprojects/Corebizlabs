@@ -13,7 +13,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="our-story-section container py-5">
+      <div className="our-story-section container py-5" data-aos="fade-up">
         <div className="row align-items-center">
           <div className="col-md-6">
             <h2 className="section-title">Our Story</h2>
@@ -43,7 +43,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container values-section">
+      <div className="container values-section" data-aos="fade-up">
         <h2 className="section-title text-center">Our Values</h2>
 
         <div className="row text-center mt-4">
@@ -79,7 +79,7 @@ export default function About() {
               desc: "Making a positive impact by giving back to communities through our tech-driven initiatives.",
             },
           ].map((item, index) => (
-            <div key={index} className="col-12 col-sm-6 col-md-4 value-card">
+            <div key={index} className="col-12 col-sm-6 col-md-4 value-card" >
               <div className="value-box">
                 <img src={item.img} alt={item.title} className="icons" />
                 <h6 className="value-title">{item.title}</h6>

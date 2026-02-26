@@ -13,7 +13,7 @@ export default function DigitalMarketing() {
       </div>
 
       {/* Digital Marketing Content */}
-      <div className="our-story-section container py-5">
+      <div className="our-story-section container py-5" data-aos="fade-up">
         <div className="row align-items-center">
           <div className="col-md-6">
             <h2 className="section-title">Grow Your Brand Digitally</h2>
