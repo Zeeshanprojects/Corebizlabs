@@ -1,19 +1,17 @@
 import "./header.css";
 import { NavLink } from "react-router-dom";
-import { Collapse } from "bootstrap";
 
 import Images from "../assets/Images/Image";
 
 export default function Header() {
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
-    const navbar = document.getElementById("navbarNav");
-    if (navbar && navbar.classList.contains("show")) {
-      const bsCollapse = Collapse.getInstance(navbar) || new Collapse(navbar);
-      bsCollapse.hide();
-    }
-  };
+  const navbar = document.getElementById("navbarNav");
+  if (navbar?.classList.contains("show")) {
+    navbar.classList.remove("show");
+  }
+};
 
   return (
     <nav className="navbar navbar-expand-lg main-navbar">
