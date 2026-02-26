@@ -36,7 +36,7 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg main-navbar">
       <div className="container-fluid d-flex align-items-center justify-content-between">
 
-        {/* Logo */}
+
         <NavLink
           to="/"
           className="navbar-brand d-flex align-items-center"
@@ -45,7 +45,7 @@ export default function Header() {
           <img className="navbar-logo" src={Images.logo} alt="logo" />
         </NavLink>
 
-        {/* Mobile Toggle Button */}
+
         <button
           className="navbar-toggler border-0 p-2"
           type="button"
