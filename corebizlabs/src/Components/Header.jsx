@@ -1,17 +1,36 @@
+import { useState, useEffect, useRef } from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
 
 import Images from "../assets/Images/Image";
 
 export default function Header() {
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
-  const navbar = document.getElementById("navbarNav");
-  if (navbar?.classList.contains("show")) {
-    navbar.classList.remove("show");
-  }
-};
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsServicesOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const toggleNavbar = () => setIsNavbarOpen(!isNavbarOpen);
+  const toggleServices = (e) => {
+    e.preventDefault();
+    setIsServicesOpen(!isServicesOpen);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setIsNavbarOpen(false);
+    setIsServicesOpen(false);
+  };
 
   return (
     <nav className="navbar navbar-expand-lg main-navbar">
@@ -30,18 +49,17 @@ const scrollToTop = () => {
         <button
           className="navbar-toggler border-0 p-2"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={toggleNavbar}
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isNavbarOpen}
           aria-label="Toggle navigation"
-        
+
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Collapsible Menu */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isNavbarOpen ? "show" : ""}`} id="navbarNav">
           <div className="d-flex flex-column flex-lg-row align-items-center w-100 justify-content-between mt-3 mt-lg-0">
 
             {/* Center Menu */}
@@ -75,18 +93,18 @@ const scrollToTop = () => {
               </li>
 
               {/* SERVICES DROPDOWN */}
-              <li className="nav-item dropdown">
+              <li className={`nav-item dropdown ${isServicesOpen ? "show" : ""}`} ref={dropdownRef}>
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
                   role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  onClick={toggleServices}
+                  aria-expanded={isServicesOpen}
                 >
                   SERVICES
                 </a>
 
-                <ul className="dropdown-menu">
+                <ul className={`dropdown-menu ${isServicesOpen ? "show" : ""}`}>
 
                   <li>
                     <NavLink
@@ -180,10 +198,10 @@ const scrollToTop = () => {
 
             {/* CTA BUTTON */}
             <NavLink to="/contact">
-               <button className="quote-btn">
-         Contact
-            </button></NavLink>
-         
+              <button className="quote-btn">
+                Contact
+              </button></NavLink>
+
 
           </div>
         </div>
