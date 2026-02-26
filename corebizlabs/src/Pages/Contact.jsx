@@ -15,7 +15,7 @@ export default function Contact() {
       </div>
 
       {/* Contact Info Section */}
-      <div className="container contact-section">
+      <div className="container contact-section" data-aos="fade-up">
         <div className="row text-center gy-5">
           <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="contact-card">
