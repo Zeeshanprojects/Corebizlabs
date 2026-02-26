@@ -63,42 +63,42 @@ export default function Footer() {
                     }}
                   />
                   <p>
-                    <Link to="/about" className="text-white">
+                    <Link to="/about" className="footer-list">
                       About Us
                     </Link>
                   </p>
 
                   <p>
-                    <Link to="/contact" className="text-white">
+                    <Link to="/contact" className="footer-list">
                       Contact Us
                     </Link>
                   </p>
                   <p>
-                    <Link to="/webdevelopment" className="text-white">
+                    <Link to="/webdevelopment" className="footer-list">
                       Website Development
                     </Link>
                   </p>
                   <p>
-                    <Link to="/appdevelopment" className="text-white">
+                    <Link to="/appdevelopment" className="footer-list">
                       App Development
                     </Link>
                   </p>
                   <p>
-                    <Link to="/digitalmarketing" className="text-white">
+                    <Link to="/digitalmarketing" className="footer-list">
                       Digital Marketing
                     </Link>
                   </p>
                   <p>
-                    <Link to="/uiuxdesign" className="text-white">
+                    <Link to="/uiuxdesign" className="footer-list">
                       UI / UX Designing
                     </Link>
                   </p>
                   <p>
-                    <Link to="/aiintegration" className="text-white">
+                    <Link to="/aiintegration" className="footer-list">
                       AI Integration & Automation
                     </Link>
                   </p>
-                  <p>
+                  <p className="footer-list">
                     <Link to="/customaibots" className="text-white">
                       Custom AI Bots
                     </Link>
@@ -147,11 +147,8 @@ export default function Footer() {
               CorBizLabs.com
             </a>
           </div>
-     
         </footer>
-    
       </div>
-
     </>
   );
 }

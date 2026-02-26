@@ -4,3 +4,9 @@ a{
 .underline{
     color:white !important;
 }
+.footer-list{
+    color: white ;
+}
+.footer-list:hover{
+color: #e2fc7a;
+}
