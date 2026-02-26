@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="hero-section">
+      <div className="hero-section " >
         <video
           className="bg-video"
           autoPlay
@@ -23,17 +23,18 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <h1 className="custom-heading">
+                
+                <h1 className="custom-heading"data-aos="fade-up" >
                   Software Innovation <span>Creative Design</span>
                 </h1>
 
-                <p className="hero-text">
+                <p className="hero-text"data-aos="fade-up">
                   We create with purpose. Inspire with impactful ideas.
                   <br />
                   Ignite your brand and identity.
                 </p>
                 <br />
-                <button className="quote-btn mt-3 ps-5 pe-5">
+                <button className="quote-btn mt-3 ps-5 pe-5" data-aos="fade-up">
                   Get a Quote ↗
                 </button>
               </div>
@@ -42,7 +43,7 @@ export default function Home() {
         </div>
       </div>
       {/* ================= WORK PROCESS ================= */}
-      <section className="section work-process-section">
+      <section className="section work-process-section"data-aos="fade-up">
         <div className="container px-3">
           <div className="row">
             <div className="col-12 mb-4">
@@ -89,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* ================= ABOUT SECTION ================= */}
-      <section className="section about-section">
+      <section className="section about-section"data-aos="fade-up">
         <div className="container px-3">
           <div className="row align-items-center">
             <div className="col-12 col-md-6 mb-4 mb-md-0">
@@ -114,7 +115,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section why-section">
+      <section className="section why-section" data-aos="fade-up">
         <div className=" container px-3">
           <div className="row">
             <div className="col-12 col-lg-12 ps-3 ">
@@ -139,7 +140,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about-accordion-section">
+      <section className="section about-accordion-section" data-aos="fade-up">
         <div className="container  px-3">
           <div className="row align-items-center">
             {/* Left Side – Text + Image */}
@@ -163,7 +164,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section stats-section">
+      <section className="section stats-section" data-aos="fade-up">
         <div className=" container px-3">
           <div className="row">
             <div className="col-12 ps-3">
@@ -174,7 +175,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="row stats-row text-center ">
+          <div className="row stats-row text-center" data-aos="fade-up">
             <div className="col-sm-6 col-md-3 stat-box">
               <h2 className="stat-number">100%</h2>
               <h5 className="stat-title">Client Satisfaction</h5>
@@ -197,7 +198,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className=" section tech-marquee container">
+      <div className=" section tech-marquee container" data-aos="fade-up">
         <div className="marquee-track">
           <div className="tech-item">
             <div className="tech-item">
@@ -286,7 +287,7 @@ export default function Home() {
       </div>
 
       {/* ================= SERVICES ================= */}
-      <section className="section services-section">
+      <section className="section services-section" data-aos="fade-up">
         <div className="container px-3">
           <div className="row align-items-center">
             <div className="col-12 col-md-6 mb-4 mb-md-0">
@@ -349,7 +350,7 @@ export default function Home() {
         </div>
       </section>
       <section className="section"></section>
-      <div className="container px-3">
+      <div className="container px-3" data-aos="fade-up">
         <h6 className="section-label">Frequentely Asked Questions</h6>
         <h2 className="section-title">Everything you need to stand out</h2>
         <div className="row">

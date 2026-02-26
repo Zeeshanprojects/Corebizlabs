@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Preloader from "./Components/Preloader";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // ✅ Home stays normal (no code splitting)
 import Home from "./Pages/Home";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -20,14 +21,22 @@ import CustomAiBots from "./Pages/CustomAiBots"
  
 function App() {
   const [loading, setLoading] = useState(true);
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false);
+    AOS.refresh(); // 🔥 refresh after loading
+  }, 2000);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+  AOS.init({
+    duration: 1000,
+    once: true,
+    mirror: false,
+    offset: 120,
+    easing: "ease-in-out",
+  });
 
-    return () => clearTimeout(timer);
-  }, []);
+  return () => clearTimeout(timer);
+}, []);
 
   return (
     <>
