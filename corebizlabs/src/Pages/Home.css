@@ -41,8 +41,7 @@
   line-height: 1.05;
   letter-spacing: -1px;
   width: 100%;
-  opacity: 0;
-  animation: fadeUp 1.3s ease forwards;
+
 }
 
 .custom-heading span {
@@ -59,8 +58,7 @@
   /* Wider */
   margin: 0 auto;
   line-height: 1.6;
-  opacity: 0;
-  animation: fadeUp 1.8s ease forwards;
+
 }
 
 .portfolio-section {
@@ -70,60 +68,6 @@
   background-color: #0e0f11 !important;
   padding: 60px;
   overflow: hidden;
-}
-
-/* Explore More Circle */
-.explore-circle {
-  width: 180px;
-  height: 180px;
-  border: 2px solid #cfcfcf;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  transition: 0.3s ease;
-}
-
-.explore-circle span {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.explore-circle:hover {
-  background: #ffffff10;
-  transform: scale(1.05);
-}
-
-/* Cards */
-.mySwiper {
-  width: 100%;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: #e2fc7a !important;
-}
-
-.portfolio-card {
-  width: 400px !important;
-  height: 450px;
-  border-radius: 22px;
-  overflow: hidden;
-  cursor: pointer;
-  background: #202020;
-}
-
-.portfolio-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.4s ease;
-}
-
-.portfolio-card:hover img {
-  transform: scale(1.07);
 }
 
 .navbar-toggler-icon {
@@ -154,7 +98,6 @@
   top: 10px;
 }
 
-/* ✅ Responsive */
 @media (max-width: 768px) {
   .portfolio-section {
     flex-direction: column;
@@ -180,17 +123,15 @@
   border: 1px solid gray !important;
   padding: 18px;
   border-radius: 16px;
-  transition: 0.3s ease-in-out;
+
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .process-card h4 {
-  font-size: 22px;
-}
+  font-size: 22px;}
 
 .process-card p {
-  font-size: 15px;
-}
+  font-size: 15px;}
 
 .process-step {
   font-size: 50px;
