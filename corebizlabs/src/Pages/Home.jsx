@@ -174,7 +174,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ✅ Stats Grid Updated to 4 Items */}
           <div className="row stats-row text-center ">
             <div className="col-sm-6 col-md-3 stat-box">
               <h2 className="stat-number">100%</h2>
@@ -190,8 +189,6 @@ export default function Home() {
               <h2 className="stat-number">50+</h2>
               <h5 className="stat-title">Successful Projects</h5>
             </div>
-
-            {/* ✅ Newly added stat below */}
             <div className="col-sm-6 col-md-3 stat-box">
               <h2 className="stat-number">15+</h2>
               <h5 className="stat-title">Industry Experts</h5>

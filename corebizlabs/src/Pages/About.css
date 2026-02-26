@@ -48,3 +48,11 @@
   line-height: 1.6;
   margin: 0;
 }
+@media (max-width:576px) {
+  .value-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #e2fc7a;
+  padding: 25px 18px;
+margin: 10px 10px;
+}
+}
