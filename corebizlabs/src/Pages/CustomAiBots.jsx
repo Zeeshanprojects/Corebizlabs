@@ -1,7 +1,7 @@
-import {Bot } from "lucide-react"
+import { Bot } from "lucide-react";
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 export default function CustomAiBots() {
-  useDocumentTitle("Custom AI Bots | CoreBizLabs")
+  useDocumentTitle("Custom AI Bots | CoreBizLabs");
   return (
     <>
       <div className="bg">
@@ -37,12 +37,11 @@ export default function CustomAiBots() {
             </p>
           </div>
 
-        <div className="col-md-6 text-center">
-  <div className="background">
-    <Bot size={100} strokeWidth={2.5} />
-
-  </div>
-</div>
+          <div className="col-md-6 text-center">
+            <div className="background">
+              <Bot size={100} strokeWidth={2.5} />
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -1,8 +1,8 @@
-import {Megaphone  } from "lucide-react"
+import { Megaphone } from "lucide-react";
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function DigitalMarketing() {
-  useDocumentTitle("Digital Marketing | CoreBizLabs")
+  useDocumentTitle("Digital Marketing | CoreBizLabs");
   return (
     <>
       {/* Hero Section */}
@@ -38,12 +38,11 @@ export default function DigitalMarketing() {
             </p>
           </div>
 
-      <div className="col-md-6 text-center">
-  <div className="background">
-    <Megaphone  size={100} strokeWidth={2.5} />
-    
-  </div>
-</div>
+          <div className="col-md-6 text-center">
+            <div className="background">
+              <Megaphone size={100} strokeWidth={2.5} />
+            </div>
+          </div>
         </div>
       </div>
     </>

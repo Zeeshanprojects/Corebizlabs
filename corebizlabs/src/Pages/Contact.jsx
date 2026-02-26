@@ -4,7 +4,7 @@ import Images from "../assets/Images/Image";
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function Contact() {
-  useDocumentTitle("Contact | CoreBizLabs")
+  useDocumentTitle("Contact | CoreBizLabs");
   return (
     <>
       {/* Hero Section */}
@@ -21,7 +21,11 @@ export default function Contact() {
             <div className="contact-card">
               <img src={Images.time} alt="time" className="contact-icon" />
               <h5>Opening Hours</h5>
-              <p>Monday - Saturday<br />9:00 AM - 6:00 PM</p>
+              <p>
+                Monday - Saturday
+                <br />
+                9:00 AM - 6:00 PM
+              </p>
             </div>
           </div>
 
@@ -35,9 +39,17 @@ export default function Contact() {
 
           <div className="col-sm-12 col-md-6 col-lg-3">
             <div className="contact-card">
-              <img src={Images.address} alt="address" className="contact-icon" />
+              <img
+                src={Images.address}
+                alt="address"
+                className="contact-icon"
+              />
               <h5>Address</h5>
-              <p>Laguna Beach, California<br />United States</p>
+              <p>
+                Laguna Beach, California
+                <br />
+                United States
+              </p>
             </div>
           </div>
 

@@ -1,4 +1,3 @@
-
 .hero-subtitle {
   font-size: 1.1rem;
   color: #fff;
@@ -12,8 +11,8 @@
 
 .contact-card {
   background: #181818;
-    border: 1px solid #e2fc7a; 
-    height: 100%;
+  border: 1px solid #e2fc7a;
+  height: 100%;
   padding: 30px 20px;
   border-radius: 15px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
@@ -47,7 +46,6 @@
 
 .map-section {
   margin-top: 60px;
-
 }
 
 .map-section iframe {

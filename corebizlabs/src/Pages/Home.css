@@ -508,7 +508,6 @@
   .stat-box:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
   }
-
 }
 
 @media (max-width: 767px) {
@@ -533,7 +532,6 @@
 @media (max-width: 576px) {
   .section-title {
     font-size: 23px;
-
   }
 
   .service-item {

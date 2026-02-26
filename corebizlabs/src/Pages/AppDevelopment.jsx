@@ -1,8 +1,8 @@
-import {Smartphone } from "lucide-react"
+import { Smartphone } from "lucide-react";
 import useDocumentTitle from "../Components/Hooks/useDocumentTitle";
 
 export default function AppDevelopment() {
-  useDocumentTitle("Application Development | CoreBizLabs")
+  useDocumentTitle("Application Development | CoreBizLabs");
   return (
     <>
       <div className="bg">
@@ -39,11 +39,10 @@ export default function AppDevelopment() {
           </div>
 
           <div className="col-md-6 text-center">
-  <div className="background">
-    <Smartphone size={100} strokeWidth={2.5} />
-
-  </div>
-</div>
+            <div className="background">
+              <Smartphone size={100} strokeWidth={2.5} />
+            </div>
+          </div>
         </div>
       </div>
     </>
